@@ -4,6 +4,7 @@
 __author__ = "Maylon"
 
 from tkinter import *
+import time
 
 
 class MY_GUI:
@@ -59,10 +60,20 @@ class MY_GUI:
         """解密"""
         pass
 
+    def write_log_to_Text(self, log_msg):
+        """
+        日志动态打印
+        :param log_msg: 日志信息
+        :return: None
+        """
+        current_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))  # 获取当前时间
+        log_msg_in = str(current_time) + " " + str(log_msg) + "\n"      # 日志信息
+        self.log_Text.insert(END, log_msg_in)       # 插入日志信息并换行
+
 
 def gui_start():
     init_window = Tk()  # 实例化出一个父窗口
-    MY_GUI(init_window)
+    MY_GUI(init_window)     # 设置窗口属性
     init_window.mainloop()  # 保持窗口运行
 
 
