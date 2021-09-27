@@ -4,7 +4,7 @@
 __author__ = "Maylon"
 
 from tkinter import *
-from tkinter import filedialog
+from tkinter import filedialog, messagebox
 import tkinter as tk
 import time
 import os
@@ -114,10 +114,26 @@ class MY_GUI(tk.Tk):
             self.write_log_to_Text(e)
 
     def encrypt(self):
-        """加密"""
-        result = xor.encrypt(self.orig_data, self.key_words)        # 加密文件
-        self.preview_Text.delete('1.0', 'end')  # 清空文本框
-        self.preview_Text.insert('insert', result)      # 预览结果
+        """
+        加密原始数据并保存结果至*.txt中
+        :return: None
+        """
+        if self.key_words == "":        # 密钥为空时提示输入密钥
+            messagebox.showinfo(title="提示", message="请先输入密钥")
+        else:
+            try:
+                result = xor.encrypt(self.orig_data, self.key_words)        # 加密文件
+                self.preview_Text.delete('1.0', 'end')      # 清空文本框
+                self.preview_Text.insert('insert', result)      # 预览结果
+                cur_path = os.getcwd()
+                os.chdir("../data")     # 切换目录
+                with open('encrypt.txt', 'w', encoding='utf-8') as f:       # 将加密内容写入文件
+                    f.write(result)
+                    f.close()
+                self.write_log_to_Text("加密文件已保存至：" + str(os.getcwd()) + "\\" + "encrypt.txt")   # 日志记录
+                os.chdir(cur_path)
+            except Exception as e:
+                self.write_log_to_Text(e)
 
     def decrypt(self):
         """解密"""
