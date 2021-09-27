@@ -8,6 +8,7 @@ from tkinter import filedialog
 import tkinter as tk
 import time
 import os
+import crypt_xor as xor
 
 
 class PopUpDialog(Toplevel):
@@ -47,6 +48,8 @@ class MY_GUI(tk.Tk):
         self.preview_label.grid(row=0)
         self.log_label = Label(self, text="日志")
         self.log_label.grid(row=text_height + 1)
+        # 原始数据
+        self.orig_data = ""
         # 密钥
         self.key_words = ""
         # 文本框
@@ -88,6 +91,7 @@ class MY_GUI(tk.Tk):
             try:
                 with open(file, 'rb+') as f:  # 以二进制形式读取文件
                     file_text = f.read()
+                    self.orig_data = file_text
                 self.preview_Text.insert('insert', file_text)  # 打印读取结果
                 self.write_log_to_Text("Open File: " + str(file))  # 正常记录
                 f.close()
@@ -101,16 +105,19 @@ class MY_GUI(tk.Tk):
         弹出窗口获取密钥
         :return:
         """
-        pw = PopUpDialog(self)      # 弹窗
-        self.wait_window(pw)        # 等待
-        return
-
-    def get_text(self):
-        pass
+        try:
+            pw = PopUpDialog(self)      # 弹窗
+            self.wait_window(pw)        # 等待
+            self.write_log_to_Text("已读取密钥")
+            return
+        except Exception as e:
+            self.write_log_to_Text(e)
 
     def encrypt(self):
         """加密"""
-        pass
+        result = xor.encrypt(self.orig_data, self.key_words)        # 加密文件
+        self.preview_Text.delete('1.0', 'end')  # 清空文本框
+        self.preview_Text.insert('insert', result)      # 预览结果
 
     def decrypt(self):
         """解密"""
