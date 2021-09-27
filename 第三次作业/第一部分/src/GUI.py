@@ -61,9 +61,14 @@ class MY_GUI:
         file = filedialog.askopenfilename(title='选择文件', initialdir=(os.path.expanduser('D:/')))     # 读取D盘文件
         self.preview_Text.delete('1.0', 'end')      # 清空文本框
         if file is not None:
-            with open(file, 'rb+') as f:        # 以二进制形式读取文件
-                file_text = f.read()
-            self.preview_Text.insert('insert', file_text)       # 打印读取结果
+            try:
+                with open(file, 'rb+') as f:        # 以二进制形式读取文件
+                    file_text = f.read()
+                self.preview_Text.insert('insert', file_text)       # 打印读取结果
+                self.write_log_to_Text("Open File: " + str(file))   # 正常记录
+                f.close()
+            except Exception as e:
+                self.write_log_to_Text(e)   # 异常记录
 
     def get_key(self):
         """获取密钥"""
