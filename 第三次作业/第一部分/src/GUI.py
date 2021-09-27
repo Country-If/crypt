@@ -126,6 +126,8 @@ class MY_GUI(tk.Tk):
                 self.preview_Text.delete('1.0', 'end')      # 清空文本框
                 self.preview_Text.insert('insert', result)      # 预览结果
                 cur_path = os.getcwd()
+                if not os.path.exists("../data"):
+                    os.mkdir("../data")
                 os.chdir("../data")     # 切换目录
                 with open('encrypt.txt', 'w', encoding='utf-8') as f:       # 将加密内容写入文件
                     f.write(result)
