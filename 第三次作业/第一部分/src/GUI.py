@@ -122,11 +122,11 @@ class MY_GUI(tk.Tk):
             messagebox.showinfo(title="提示", message="请先输入密钥")
         else:
             try:
-                result = xor.encrypt(self.orig_data, self.key_words)        # 加密文件
+                result = xor.encrypt(str(self.orig_data), self.key_words)        # 加密文件
                 self.preview_Text.delete('1.0', 'end')      # 清空文本框
                 self.preview_Text.insert('insert', result)      # 预览结果
                 cur_path = os.getcwd()
-                if not os.path.exists("../data"):
+                if not os.path.exists("../data"):       # 判断目录是否存在，不存在则创建
                     os.mkdir("../data")
                 os.chdir("../data")     # 切换目录
                 with open('encrypt.txt', 'w', encoding='utf-8') as f:       # 将加密内容写入文件
@@ -138,7 +138,10 @@ class MY_GUI(tk.Tk):
                 self.write_log_to_Text(e)
 
     def decrypt(self):
-        """解密"""
+        """
+        解密
+        :return: None
+        """
         pass
 
     def write_log_to_Text(self, log_msg):
@@ -152,10 +155,10 @@ class MY_GUI(tk.Tk):
         self.log_Text.insert(END, log_msg_in)  # 插入日志信息并换行
 
 
-def gui_start():
+def main():
     gui = MY_GUI()  # 初始化窗口
     gui.mainloop()  # 保持窗口运行
 
 
 if __name__ == "__main__":
-    gui_start()
+    main()
