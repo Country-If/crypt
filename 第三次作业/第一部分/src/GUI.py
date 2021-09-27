@@ -89,11 +89,18 @@ class MY_GUI(tk.Tk):
         self.preview_Text.delete('1.0', 'end')  # 清空文本框
         if file is not None:
             try:
-                with open(file, 'rb+') as f:  # 以二进制形式读取文件
+                with open(file, 'r', encoding='utf-8') as f:  # 以utf8形式读取文件
                     file_text = f.read()
                     self.orig_data = file_text
                 self.preview_Text.insert('insert', file_text)  # 打印读取结果
-                self.write_log_to_Text("Open File: " + str(file))  # 正常记录
+                self.write_log_to_Text("打开文件：" + str(file))  # 正常记录
+                f.close()
+            except UnicodeDecodeError:
+                with open(file, 'rb') as f:  # 以二进制形式读取文件
+                    file_text = f.read()
+                    self.orig_data = file_text
+                self.preview_Text.insert('insert', file_text)  # 打印读取结果
+                self.write_log_to_Text("打开文件：" + str(file))  # 正常记录
                 f.close()
             except FileNotFoundError:
                 pass
@@ -108,7 +115,8 @@ class MY_GUI(tk.Tk):
         try:
             pw = PopUpDialog(self)      # 弹窗
             self.wait_window(pw)        # 等待
-            self.write_log_to_Text("已读取密钥")
+            if self.key_words != "":
+                self.write_log_to_Text("已读取密钥")
             return
         except Exception as e:
             self.write_log_to_Text(e)
@@ -118,11 +126,13 @@ class MY_GUI(tk.Tk):
         加密原始数据并保存结果至*.txt中
         :return: None
         """
-        if self.key_words == "":        # 密钥为空时提示输入密钥
-            messagebox.showinfo(title="提示", message="请先输入密钥")
+        if self.orig_data == "":      # 文件未读取时提示打开文件
+            messagebox.showinfo(title="提示", message="请打开文件")
+        elif self.key_words == "":        # 密钥为空时提示输入密钥
+            messagebox.showinfo(title="提示", message="请输入密钥")
         else:
             try:
-                result = xor.encrypt(str(self.orig_data), self.key_words)        # 加密文件
+                result = xor.encrypt(self.orig_data, self.key_words)        # 加密文件
                 self.preview_Text.delete('1.0', 'end')      # 清空文本框
                 self.preview_Text.insert('insert', result)      # 预览结果
                 cur_path = os.getcwd()
@@ -134,15 +144,50 @@ class MY_GUI(tk.Tk):
                     f.close()
                 self.write_log_to_Text("加密文件已保存至：" + str(os.getcwd()) + "\\" + "encrypt.txt")   # 日志记录
                 os.chdir(cur_path)
+            except TypeError as e:
+                result = xor.encrypt(str(self.orig_data), self.key_words)  # 加密文件
+                self.preview_Text.delete('1.0', 'end')  # 清空文本框
+                self.preview_Text.insert('insert', result)  # 预览结果
+                cur_path = os.getcwd()
+                if not os.path.exists("../data"):  # 判断目录是否存在，不存在则创建
+                    os.mkdir("../data")
+                os.chdir("../data")  # 切换目录
+                with open('encrypt.txt', 'w', encoding='utf-8') as f:  # 将加密内容写入文件
+                    f.write(result)
+                    f.close()
+                self.write_log_to_Text("加密文件已保存至：" + str(os.getcwd()) + "\\" + "encrypt.txt")  # 日志记录
+                os.chdir(cur_path)
             except Exception as e:
                 self.write_log_to_Text(e)
 
     def decrypt(self):
         """
-        解密
+        读取加密后的文件进行解密并保存解密文件
         :return: None
         """
-        pass
+        if not os.path.exists('../data/encrypt.txt'):       # 加密文件不存在时进行提示
+            messagebox.showinfo(title="提示", message="加密文件不存在")
+        elif self.key_words == "":        # 密钥为空时提示输入密钥
+            messagebox.showinfo(title="提示", message="请先输入密钥")
+        else:
+            try:
+                cur_path = os.getcwd()
+                if not os.path.exists("../data"):  # 判断目录是否存在，不存在则创建
+                    os.mkdir("../data")
+                os.chdir("../data")  # 切换目录
+                with open('encrypt.txt', 'r', encoding='utf-8') as f:  # 读取加密文件内容
+                    encrypt_data = f.read()
+                    f.close()
+                result = xor.decrypt(encrypt_data, self.key_words)  # 加密文件
+                self.preview_Text.delete('1.0', 'end')  # 清空文本框
+                self.preview_Text.insert('insert', result)  # 预览结果
+                with open('decrypt.txt', 'w', encoding='utf-8') as f:
+                    f.write(result)
+                    f.close()
+                self.write_log_to_Text("解密文件已保存至：" + str(os.getcwd()) + "\\" + "decrypt.txt")  # 日志记录
+                os.chdir(cur_path)
+            except Exception as e:
+                self.write_log_to_Text(e)
 
     def write_log_to_Text(self, log_msg):
         """
