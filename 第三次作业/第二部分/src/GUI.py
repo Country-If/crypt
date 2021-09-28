@@ -49,7 +49,8 @@ class MY_GUI(tk.Tk):
             for file in temp_file_list:     # 获取文件名列表
                 file = re.compile(r"(?<=name=\').+(?=\' mode)", re.S).findall(str(file))[0]     # 正则表达式提取文件名
                 self.file_list.append(file)
-            self.write_log_to_Text("已读文件列表：" + str(self.file_list))     # 日志记录
+            self.write_log_to_Text("已读文件数量：" + str(len(self.file_list)))     # 日志记录
+            self.write_log_to_Text("已读文件列表：" + str(self.file_list))
         except FileNotFoundError as e:
             self.write_log_to_Text(e)
         except Exception as e:
