@@ -4,7 +4,7 @@
 __author__ = "Maylon"
 
 from tkinter import *
-from tkinter import filedialog
+from tkinter import filedialog, messagebox
 import tkinter as tk
 import os
 import time
@@ -20,6 +20,7 @@ class MY_GUI(tk.Tk):
         """
         super().__init__()
         self.title("计算磁盘文件Hash值")  # 窗口名
+        self.geometry('1200x450')   # 窗口大小
         # 标签
         Label(self, text="日志").pack(side='top')
         # 文本框
@@ -55,11 +56,33 @@ class MY_GUI(tk.Tk):
             self.write_log_to_Text(e)
 
     def button_clear(self):
+        """
+        清空已读文件列表
+        :return: None
+        """
         self.file_list = []
         self.write_log_to_Text("清空已读文件列表")
 
     def button_calc(self):
-        pass
+        """
+        计算Hash值
+        :return: None
+        """
+        if len(self.file_list) == 0:        # 判断文件列表是否为空
+            messagebox.showinfo(title="提示", message="请打开文件")
+        else:
+            try:
+                res_md5_list = []
+                res_sha1_list = []
+                self.write_log_to_Text("计算Hash值(文件路径\t\t\tmd5\t\t\tsha1)")
+                for file in self.file_list:
+                    res_md5 = md5.Hash_md5(file)        # 计算该文件的md5值
+                    res_sha1 = sha1.Hash_sha1(file)     # 计算该文件的sha1值
+                    self.log_Text.insert('insert', file + '\t\t\t' + res_md5 + '\t\t\t' + res_sha1 + '\n')
+                    res_md5_list.append(res_md5)
+                    res_sha1_list.append(res_sha1)
+            except Exception as e:
+                self.write_log_to_Text(e)
 
     def write_log_to_Text(self, log_msg):
         """
