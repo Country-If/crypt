@@ -1,0 +1,486 @@
+文件路径			md5			sha1
+
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AAFCOAPI.dll	7fd73eadf0c22ae7bfd2a04f224d9352	789d92159a44524479eb1f03a47ecf2bfa708ea1
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ACE.dll	7970c2ca61db5e69acf312b5c47af06b	22a301c8d3710551d0cafd7dc744e919190f5984
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/Adobe Premiere Pro.exe	f7c5d98b54d4f5b5bd263161d8fd0977	78fec767d32c006d98275d58498703c631b0b690
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/adobe_caps.dll	191c1800daee0b2daae420d7a2fb2c7e	1dd1d0c91de367976908224da952e60f1af2b5cf
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AdobePDFL.dll	7ee5046ef49468e3732a7e4999f80645	27928ff4ef353c7d74ff31763076a8fe89662d14
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AdobePIP.dll	b377b32d170aabbc081850364efd2bbb	febf0884b30127c63c02ffa412a73fafbd1d92e8
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AdobePSL.dll	e3f984a7e99a8573d9c46bcbd100a9b9	1effc5de9a3aa3e35a8ea6800da274aab4813cd0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AdobeSensorManager.dll	cf6d32aaabeaaa2bd8634e165e51f90c	b5c8a582baa1deb504fc8be1972bd5ecee8ed49e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AdobeXMP.dll	3daa14941d8676dbbf1bd5e8b4c0b321	1879519fb8f889ff8c836ef7e6dea8ba95e0c15e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AdobeXMPCompareAndMerge.dll	f8476ce0e93eb1285a4af91174700715	e35437a099bcd768d9428c055ac5f39dc3ef4fae
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AdobeXMPFiles.dll	1c3c6cefbf2e57d83f78584161099d36	471c571d7912ebcfefb95308ff99a145d235ba9c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AdobeXMPScript.dll	b6d3f6d09fc0c19c8073473a63bdf6c1	5ace8efb304da14b4d549219f0291eede88de453
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/aelib.dll	e7c4da965b3153792fca21aa1ccaf070	692e7d1e4a5e305e962b513cc82a58e15e61b82a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AGM.dll	13b7e8549f3433f74fb00ce0cf0cbfa9	16401bb00f6967f8e2f0a1e13f74af054e3f9c8a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ahclient.dll	e34dbc95bd9b95d120dc658fbb364e97	0fcdad4f377ac6de60e5acc4e39343ce2813360a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AIDE.dll	0fcfabd153af175c7d5a2a39e822817c	f3675bc6c97656dc40f94b863bd2699da4da0fca
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AMEAppFoundation.dll	c803293bd27bd018bfc1a68660689cd1	0a4e9da15d7395ecdec9608554fa4d0dd8db51c7
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/amtlib.dll	b773cee8aae74e5eb7e0dd3ada08a21e	72257f20edc89ad9dbd4da2b8ff5ce5557701ea6
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/amtlib.dll.DEL	e386c37e5469ad27b10bd6f69b6ffcd4	44d80a2606d4112dc53bd32adb6af1ac828ee93c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AnywhereEncoder.exe	31458d2bb00c32bd22b18a09917fbf65	cbaa05cba7354cfe440673633c44e6644bdaa36c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AnywhereIngest.exe	0fbf52e360bcdfd2f67a7f76906e93f5	e5f9c20421db8210ae245212f010a0dc237430b4
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AnywhereIngestPluginWhitelist.txt	aa4325d222e44e0dc6f33f29e35cd5d5	5d9a11037b2a26a182d44050aabf752daa854e5b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AnywhereProductionConverter.exe	777d297e9af1c39810fdb778a0719257	4d2ca7122dd9ec9decfb96bd2d3e8ad7ac315925
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AnywhereRenderer.exe	dab5d95dc02eed9a8f20a366b5789725	7258edc1f4142ee5723c7293a9298a2fa4ade895
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ARE.dll	e328f40e8835316cfc90fe1af15c302c	3e9d600ac2f13732a34f6be641e3890f6a775a6d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ASLFoundation.dll	892410915afa76569b54232aff55d8ec	913119dac0aee76cd9f4f62fbbd64239f5381a03
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ASLMessaging.dll	67fbdff3462666756f90d4e0550b2289	47220bfb9232c5beab9571385266f0776b5b7950
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ATEWrapper.dll	21ba07aac2766a9ede7d7ea425f9fc20	d6592ca4fe2d50f31ba812c54980f61df1b57e73
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/atl_audio.dll	065495b4dd3952ec3a7ae6f060a479a0	7fb711b76074dd2b0bde3634b063ecd094ff248c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AudioFilterHost.dll	68843839251937909109c5b4c5fca24c	ec961fada815597f3883c577ec312cf07be35f83
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AudioFilters.dll	a21eaab12ac6901e4c3bb4d7f564d27c	3341800d91a4710c224d3c3b9800d189a29cd3ee
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AudioRenderer.dll	446bec18840f2578225724d7f4394643	3ab1669dd917d36afa253fa6f173654e7839d94f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AudioSupport.dll	08883490eb33c848c0926c0f1c133a84	0518f4501c4664554594b734d121dc7d5388cd51
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AudioWaveIcon.jpg	0fb0108302af9c816461428f3e289c92	76e9d1eb0f3f688329a45e801767a1a16c70cc66
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AVCIntraEncoder.dll	20e85ad39c0df6c79227d2af30e3143d	7d2c0e001b646e69a0ba38b6ee75d92197482faf
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AVIWriter.dll	4ccd66aae5d2138b4c52495b12fc3085	771bfa74ec9cd63e01588788cd85e529de85272f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AXE8SharedExpat.dll	1ba2f944dba5be9adc0bf53c14dd5fd5	ea13ef7d9edf9cd31507f0d553f40d544fdee462
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AXE16SharedExpat.dll	51fe387959ddb9a56ee6b2e835abdd0e	3761f863926d07f89e92506647db507883917b09
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/AXEDOMCore.dll	18a1385799ad9c71e8a43fc0a35cf7de	a650736ff24db65690a202e61312855e093bbb9d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/Backend.dll	1c9cbe5ee4643773eded7aee8418d4ec	54c1ef1d2f97c7076ad24cd3fc25d686beef4706
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/Batch.dll	60d57a2ba21610b5ae60475fb247d9dd	3572f202f892da1ffb43d00dfbd5e027fdef01f7
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/BEE.dll	51001f4bf02fce57c4758bd549b852b2	338ee20d9c054be28e11cdc5996b3b6c420a9efb
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/BEZ.dll	f17e2b64137685f6da39a280be9d090d	8d73b38d841919c163f365a9ae715dbf39c9d615
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/BIB.dll	a4d89020b2996bf39ecf24fabd600783	64ae70888858323c30e47b13b61b5c30fb357007
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/BIBUtils.dll	a30d0c4653dda0dd9f0decd7e6739960	2b29e531421be2492dbad3f27f8e07311a983433
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/boost_date_time.dll	d9352b51034dbde416de492508a49266	4ef4a25f5eda901327e5c9546be631ff40b703db
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/boost_filesystem.dll	861f67f979825bef8dc96325ead19253	aa44df184f52a5ca083ccfea5c26d8951ee7fa4e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/boost_program_options.dll	e62aac99b4f9d2921c3a022ad1c2e70b	d352cb320dbf9e2b0bea5f2662914f7a551ff2f4
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/boost_regex.dll	03d6af7f243c6366b0333b389a7d665c	0916b639afed222394125b9cd51f4c363c822bcb
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/boost_serialization.dll	3232e2a11e08a4f40dea14eada5aa659	f863171d69de2710e97bd3fd638904648beea068
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/boost_system.dll	9307986358eb901de130d718f95eb32c	e8198a63b516125a238988e6e15f9882f5d2e22b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/boost_test.dll	7d934c317f1d98985ca4acf6283e8983	fd3731a28a02219a46bcf67586bad7414ae471a6
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/boost_threads.dll	43b68b11d3b3243a96b5b8f09ea08d42	64ea57fe3af7e6177f752779c0663eec0123b694
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/BravoInitializer.dll	8515df60fac6aca875027d54e61c1c2d	0599d9d18407eeb0970a8971be96e70cf14e27da
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/CCLibrariesSupport.dll	13f86a8f351e3df1ca6d696afc58d6e8	a06223f6ac8e8e5c76fcbddab65081aca0ed0c47
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/CFHDDecoder64.dll	eab5a5fe9363ac0145dbdddb2cb926d0	86c0740626b25e862d8a33d5e1d9ba147c98e554
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/CFHDEncoder64.dll	cc0397e96d48a7cec5c16dccc11b2c01	52169783732722a128a87121767440183e7cba1e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/cilkrts20.dll	51a55182b0ec7a68905c781a9cdca34c	2a7c82fd46198cb8970159df3976d1f35165328b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/cloudservices.dll	767692a085dcb55f46951ea25d725f3f	6d60b7432ad0dc789a2fb3002a662f367903240f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/CodecSupport.dll	fe227ec9db08f5443832a7344343dec0	590e3848faba1894d14e080f623925a2d4619649
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ControlSurface.dll	267de646096061b38cc51c664b05b2cc	6a75074ec53f5b5036cb138b64c282e35a40bd0a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/CoolType.dll	39b80d59cc3fe5d33368a9fe19324e15	4ed1b7968a2c5cb529cca0fc6e870aa4150bb408
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/COR.dll	35e045457170cdaab965a1c8d92d414a	fc54a553dca8ec6ae0fc7c73c8bde0c6253712a0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/cr_win_client_config.cfg	f47bdc7e9780ab2794c9c1d7528b7e70	9e521436bf45eff100d2218a78682c6865e9addb
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/CRClient.dll	f088ef33118ddbf9d3860be73ec18f4d	280100bb2aebb0c0602965eae0047f4850b33864
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/CRLogTransport.exe	56d1a15888e2484ba6f1d18439fd598c	3efdfdfc46f2289441a4f04e6cbeff537d210952
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/CrmSdk.dll	37683afe2143a19d9b47495305e31c81	5ab2930c55a31b6f1af3adc712797faa5e2877f1
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/CRWindowsClientService.exe	ba332d3118f67969cd753f2eca41cf5e	6b2bd669b2a6dac961ddf8eee9514a3a77bd4a84
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/crxdec.dll	94e7ac997a06699bff75da7239a9f5e9	9175fe1ef9705cc45a3c3bbd5bbe8389f0400c6c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/CSXSManager.dll	3d2567714f112be404121ec5c46fd5ea	23c2322995b786b6c543d3861a5e7be7ac9c1d00
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/cudart64_65.dll	4b7b465878aabb796857483cfe4cfb9e	e726a6c6196804c31d3e2db5e44e5bbe6eadf4a0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/cudart64_75.dll	60ea51e513ffc81a2786b9cca098cab7	d1e4ba8b146821fed11180911d1c663c2b349f94
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/cudart64_80.dll	cf198b329fb988983749f891c060245e	8cc81b4e6223069d15f11582191f4d75a44ddbe4
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/Dialogs.dll	e9516fa57da750fe9b5473814cb42cd7	685d41123608f7f1feba0d1e10847ef2915fb97e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/display.dll	66b54c8ceca386debb93880077712808	c0757ff9f8a01a8a5dd9caba70f794d3b53a3e8f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/DisplaySurface.dll	e9a13ce50cbe0984c3304a04f230f113	fe432f0af1fde52794160fa7f39c2daa0865551a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/DNxHR.dll	274e5c79f78193cbd00ebbfa6423d4f0	e087e5c6603b41234767c565ac88bfe5cf8d90db
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/DQomfToolkit64.dll	e303ef15f0834897256cd63425dfc37c	2500a581b56d2f093098994c86660148011fd578
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/drawbotagm.dll	bbe60a0f9cdb74f02eb8bef9f504e1be	8726a4e17be1183adcc01c586da3ee1bd6daf762
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaaccelerate.dll	24ea05a7f4471123fbe30616be2ee941	ad0f927054e666a8def1a69e7e6a81803bc51d74
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaadameve.dll	0287a18e46337b899ce33bbd7135c11f	6f50787e36bf639ad08533800c6a7913c6df7258
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaappsupport.dll	4654173d3959a18f1cf1baf1c19bb3ef	ccf576bffc7daa31fd08b00b8681bd9ccb454e3c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaaudiodevice.dll	6f6cfd2b87200b422bc6cd46bdbba7f0	5321fad6a10e230dd77a8815d9e31a704811f053
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaaudiodeviceui.dll	d052335ad5828137593123862b20bc2e	1b0134158354e91a1a8266f9485d82250d50c0ef
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaaudiodsp.dll	fd769846b3c35a881275deac206e324b	c56a9e923ef1be35250b9d9a8025b6e523bc3d7d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaaudiofilterhost.dll	c52cb04e838712e987643c9b79b193ae	380dcaf00e923f9b4c970ceb4500e9b7953b75f8
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaaudiofilterhostui.dll	d82f0f4cab2c40d190282e2ae4b5a67d	658b833b495e14becb4a483c55643d495ff160f9
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaaudiofilters.dll	e666bca99db1e944661dfa999def8383	8bb3498b9af3525bd70dce451feec8764b073b01
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaaudiofilterscan.exe	5f887dd6827ba31bdc842fb9576c4e22	81ed86bab48f882a08771366cd57d0881a0c8ace
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaaudiofiltersui.dll	f3b00529731082fb0fb80b27c6a90c47	615ed7ef729786cc8272ff169b1fbd32935ad38f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvacaptioning.dll	689107ed88fbce2452e17cc5f4280c50	7c80812181e77d60a2d416022ee1583f9bfaf6b1
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvacaptioningui.dll	e0ab15db26773c45acf127d445143537	fd66d0c85c7a106a9c50e9a8bc5d6fb68c5ddaac
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvacontrolsurfacehost.dll	1dfc71b59ab55add78831b0d568afacc	ff67070fa474540fe9f54fc40794b7b57614a9c2
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvacore.dll	a6233b1ec87f3b37df5c242b4601ba75	51d2e1db9670f648259d24695e4eee2f79f4213e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvacrashhandler.dll	60d41825885d47653c8fad77dfd79577	5f6a99c944bdb675f60f573e4582658282b259d7
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaeve.dll	279d2a30dda7686ca9e101210c20de90	23a223930188f0724e9087c3cefc68b7c54b0995
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvamarkerUI.dll	d728bf70a98c88ffd49e0da3a577a711	1d19f1cee7c32f72dc5e0b9c3421121289466aa8
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvamarshal.dll	cc1a3fcf9788c20b50e187c82d3b501b	f9adb219410f43a680796bcb4c7d263bd3a4d38e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvamediabrowser.dll	bbb46535dc7323d68f0664d9a942c21d	87d3747d192c9e721de376cb059c40a7f9b29400
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvamediatypes.dll	4a49fff4f3a670b9549711e49faa0d07	c6a6fe43ebd312c7534542041cf1bf7719071938
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvamediaui.dll	0ff372796715676502281d3d33defdc1	ecd7854eee0fcbd7ad1bbf885dd62fbcffdd8cf8
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvametadata.dll	615fc5648fcfd8e0cffa0cb9b0f482d0	89ddf80d6cbe4ee96d6e109df85392c55854c180
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvametadataDB.dll	836160fa87aaa1341a5b89efa8c097b0	324cfcaf0679e433645e265e17d7daa71a9f67ca
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvametadataUI.dll	bca8cc3fd1d20c2429ee7a81ebe76216	e2a794fc016a328cf1422e86adc53bbe28a5986c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvanet.dll	c446ec4418240ac8369ac6819f2957b8	11556be0038c4f0024076c86de8df25b26839660
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvanetsync.dll	39d153d5ba456a0b2fb9aabee8ebba36	6c982d6411eff81e8eaf9ff2b52dfedd3a3fc3cf
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaplayer.dll	9ccaa37520e9c509914f567a315213dd	28fef443d46abe1e910de83d38d4f92f89a5fb26
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvascripting.dll	f837941280dce11890202833c28de1d2	92009f810921dfdcee74eebfe258fad5716b2f61
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvascriptingES.dll	20113cf11bd87ed2b4206844f68dde0e	340bc76f2ba9f4ea7ca5073c9f886aac283b446d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvastorage.dll	9572d5eecbdabec5c30218b7a26c9cae	8c6c3d86a34eb86b3d103d84e691c78c7adececd
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvastorypanel.dll	394bcfdc3ab82afe45379c8c507718de	94822851d1e9c1c07df4bf7ca76ba99b8e16705c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvastoryparser.dll	b344335f6b7b3f30deb67ed2abc33a21	539941be01d9df890a98be39c1209780ffd3ef90
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvatemporalxmp.dll	5fa8dbf261e3b9034ad33707d1468304	5d7b3650a0ee20b89e7a3300591f1911b4169b53
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvatransport.dll	4eaf4f49f7deab8327a6538d2995c44f	fc7e3608b06ff536cd6a920357fd39d20cb0e270
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvatypekit.dll	2413e4f954dab803655c27d93bc8cf78	432a84cd3b6423ed973c91ee85e8cdc8805ff0d3
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaui.dll	a8c45e46d54ca6c7ef9c5bb6add84ec6	20aaa54e648d9b2cc39e822f3fc628182b3cd142
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaundo.dll	dec984afffca2df792428dc1f67e503c	a2bcc6aa40cd9228a75f3e49c9ea76da42462655
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaunittesting.dll	3cc53ab8449cbfe8a9e3644371d30a03	00fd493667a545e01fc5b6c2db7bf4c3f989b3a1
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvavirtualui.dll	2bebe1e63815fe9289fe6369e96e7f22	661be87f62a23d2b9455e9b536c472a4ab15f922
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvavulcansupport.dll	5df0655a4505d425d36f5aac06f1ed28	3b2514ccbe31c4f3041f0201bca0cd05a0cc669a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dvaworkspace.dll	c4517c3dfa9f62e3beaa31b079fa98ac	276886897ce3d7d4a6d95a00566277fb3f7ca0e2
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/DVControl.dll	cab4215d980e0f7417be6ad3826148a4	037b31b22d6bfb948509b93ff87b0335ea2062ac
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/DXDVSupport.dll	1cec2c02ea940fe9a135b88bb9de5f6a	639a9f5d284ff8518b0afe3c3d7f8c500fd7cbe4
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dynamiclink.dll	7c6a018ce542d387ba1132de5865e83b	c5fc10fe70dd75f7d2f9242ff5e3a262a0ec26a0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dynamiclinkmanager.exe	6fa8f51cc73eacb4e176f86ab9644d30	0743f8a10cca13f456ca4bae27c374efc0a9305e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/DynamicLinkMedia.dll	8ec1c8b2db5c9fb3b3c2fb0c642147d2	0e4ea569854f75a8fba3575e85605d1902336505
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/dynamiclinkUI.dll	57ad20ea084f96e6c8800e3938025b93	8962419c60460289cce2af6a612a33ce3444d4e0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/EAClient.dll	97197ea1039fe83f8dca576fd0ee6a6d	4457d61c02df8c23735de86efc47c7cb7af883da
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/EACodec.dll	ef1a3d4d22355b5760f4843496a4e4ba	ce60ed051162598f222fbd3ebc265bb75c6483ac
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/EAMedia.dll	eebd1cbd1c418932626d4ef4f88f47bd	ce000e65a6b7e3eca7f4ede22ade46262bce8450
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/EAPrBridge.dll	7b8a1eaf99fd61dc16a943d7b2353b7f	875beb40224b6db54434fefcc28df514273780e6
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/EAProjectBridge.dll	7c15951365cf525c82a0cf73e43c4047	4d0c3a568d0a347346bc5b33b7c319b21b2b9ec5
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/eaurl.dll	ad4b87856568d30f827cc2118bc2a44f	bf5f0d9bc44f13b59d69d6b2ca272e98684ad369
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/EncoderHost.dll	cb9e01305d4e0d44b696afe9843c449c	9ea3f0b4df53d829b708fbe5930873b8eab3be0d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/End User License Agreement.txt	8d721522095c20d368c642fa23e67c2b	f4fcf777ef60c235656164f9d37dc57aab7a9086
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/essentialsound.dll	ccbdd4e5318abf68fe1df15d31dc3fbe	c9ebb752baee06a3dafa5ef6cffb585fbd040ab3
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/essentialsoundui.dll	18f5d407f9cc5ec193ff685bcc56cc5c	4829d761c959d3e445c80eaf8ed57d7b8c03c062
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/exo.dll	4807f555ce59b242012f41622224169f	09a32324b9d1aa56b1c76a50e6b0df8d0ef6f6b6
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ExporterHost.dll	06c50b4b0173180986544a9481ce8da2	995e59a014af8a4a2041ed67c7cc0531290a2c4a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/extendscript.dll	cc7d8ca98a9a495634599c049bf2efcc	3e46ea80fc091d304cd086fc3fab2c7370d51ec3
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/FILE.dll	4e0f382c5d9502c100f8e6a913ff9d74	a3ae3fc9cbda2bdbebc356e28f2b424f6980b394
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/FLO.dll	6ea3b350e27ab2ee6489fbaa3b39eb0c	635d12617881b1d7c77d6301598aa2d4669e6d74
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/FLT.dll	58e807f5c2a8594814a4135510f990aa	0c6f38a154a804e1f4145260648949e5801c3f5e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/FontEngine.dll	4170b180b2914480fd60973c910823a3	57b85e5cc5dd86d5ed3a318654bb54081744d6f3
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/Frontend.dll	6b193d29fc03cdd498873734a7285cb2	e1d19b5db55e79c419e5302ee5aa2c543958388c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/FRP.dll	c9dc80e16f82f7749dd673026ca1875e	bb0cc79e3ff6d9eafebbf31024d2ee0e4f3868ac
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/git2.dll	5cb27625cc749aeb31b1a8c614993cce	b88dd1d9cfb92955a1fa4784e427833b0d28931e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/GPUFoundation.dll	5907e18a02d1d1a664a7dbdeaf3251e0	eff6fcf720def427afa7c04ded2a3e9422e7f096
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/GPUKernels.dll	c8872e2a8e3407c5b53f529e7ec654b3	7efc95ee5e84589ef92fc989a7ba1fb3a65cb888
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/GPUSniffer.exe	7f8cb34d49ad52177e47242ab1debf27	5073f17b0907a52bfa0b1ce1f7a87d4b9f3b973b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerAudioClipMixer.dll	0c37fe9d71a5c43029513045fbc3ff49	9adb7e519e7f910fea933888e589dfda0e6a51ae
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerAudioMiniMixer.dll	9f927b72b144b4d8d76e069f2d81a53a	a74baff030e9cfc8013a9c3e10b45fac9c1bb4f1
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerAudioMixer.dll	64dd746562174a0574b3b340fe896aa0	d6724a7c7610580956872c7efef94302e1e9e906
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerCaptions.dll	e98e953e335143f5384da3633b537a3e	1065c2d1662ffd73323173436bd8c05a8189d479
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerCapture.dll	cd7ed58bf8b372f0f6ef03a044eb260a	75201fdbc55f4ba707956f0f37af420260b48e23
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerColor.dll	0449969def74a405faa5f246670d39a7	35bcccf547cc410d2745533b1554820873929f22
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerCSXS.dll	5468d46a5f291f30ab10c6ef5e51d50b	239fc76f042721c44ffe1a0672a6bdaa54f2688a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerEditToTape.dll	4f72262cf79d597384c455cb4e68f67b	203cc456611c8067fd1fffb90dd0a111d0618b76
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerEffectControls.dll	fb7aa30c82470df1efb47c1d29b7193d	516940cbb128bf9284021b6b6572c0de743063d7
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerEffects.dll	94d389279fc301eb18bb5602ae7e8b3b	c021fc52fd6d557a9637c7c587f22158967cc38f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerEssentialSound.dll	3b7a7f8ac311a7818dd664338b5e6229	e0f222f02c4e69d2acdc3c883c8b83f09e32a58b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerEvents.dll	50afa55e69f10a785a5c51097b907980	f0dd2125af922b4996af50f33e8f513b8ed39ac6
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerGetProperties.dll	6c364d709cfbb6bc11ad1b6a0b1761e3	1c64db6005c10848a55a15c5671058a9e27e949c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerGraphics.dll	9a7d478ba2f24e256cff1043933f2f85	6037514b96a83435a33cb93396a7ec79e6d36caa
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerHistory.dll	48959925a2612f68954dea741a4cc248	2b316c2fe10f8793042a71ed776e2f402c88b76a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerInfo.dll	11bf75d6c20b3c67967048d6f9f678cf	0e0033f4eecdb6cb5b97d539f9671d8555899d09
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerMarkerList.dll	dfb9deae842e03de8ec853870dbcf0c9	e6d4683e57817b96ca0cc422d761acc4b840fea4
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerMediaBrowser.dll	8185ff2041ad0731a70a4cb08bc13753	e9df9d1814cea239345bde18a06227725045acd7
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerMetadataEditor.dll	384bd7df732880d486867b2639220837	3b9326e01e22082de21b36a75baa9a830122b108
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerProgramMonitor.dll	fd3a2d65e2bc5db73fa4598d1fd537a4	551552b519c6455084e84d575e9e7842401011de
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerProgress.dll	7616a18226b91d20d621b784dda04b09	9207416bd4233e0a5aa8736381ae4485b2a4d2c5
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerProject.dll	5320f3ffd617b00342742aade8196cb6	4c5a2d1a1caa5d5730e21d115859aff43945b970
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerScopes.dll	5e0808ec9be8063e9339204a6810891a	0c3df0e96a7d1fb0e5ebd3ec788d5fafb00acc0e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerSourceMonitor.dll	72d5f8fa1bff52f3015dc3a5d89f844d	21c681fca2ef7c4d7895fbc0a0f2edd37d656fa3
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerStoryPanel.dll	eb3b39614a7f18d1c0e4d35902a18999	9ed48f37bd6558df87ab65b81065b90fa0b0cf4b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerTimecode.dll	4eb9f6c01f5c03c00e9e07e43cc6809d	15afcc371c6819fca04c9d9b74391e17b32ba809
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerTimeline.dll	a59737d535f1f9aa75748dd7dec5bba9	c7a78939a1c21fcf37188eac444b3f54f3c4272f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerTitler.dll	881379bbde0fcba1517767eb4a469e75	1777be799c82db70d5e2b00bf718241636f24793
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HandlerTools.dll	8b0cdb9056933758c7fd3dc17c17e75d	3abaf14e004af31ea2eb34cd356bc67be79fed9a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/HSL.dll	368a21bc2828fe68aab4f9a86b5618a0	3f0476dcab3e86a8a686e843c8ecf1d1105dc41e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/icucnv40.dll	3590f06cc2767564e3e0a7feabb4bce8	d0f233fad45fafa5bbffb7caeb4c1d6093a5c098
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/icudt40.dll	0f358523f03b5d092c7816fc2717615d	fa98c222eaacfd13fa63e2e58ddf2f22cc966bf2
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/icui18n.dll	c3707ea0a02109fd98cb4a01a60b64a0	f7a8a1af8a9fd3ac593c4eebbc6cff47688b0eb0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/icuuc.dll	89ec40ded062cd93d91d3602ee0b8bf6	19dd3b6362a820710985f853874f93c448fa302f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/icuuc40.dll	f921c3218e7f056cc4bb90a574262797	db58130f8796b7ee9d0d18866ef10dcdb526de58
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ImageRenderer.dll	7e674d0120232fa4d855a926f53aab0c	adcefd3aec18864d9961cb3ec4e24360578dcc50
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ImmersiveVideo.dll	5967100bd9cf9d9c99774b2072ecd30c	3aad65a1ea29fa68bf5bad698bbd28f09cd26be4
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ImporterHost.dll	655813b697e3cfbc1130c9fe82075ed2	cb366d59c73457828b1f37f69c4fbe1244bdd483
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ImporterREDServer.exe	49872ffbeab9cb672409e5f01ae97667	6d768cf8e3c00a44da7c1e30df4479327b6c12df
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/IMSLib.dll	8e53a4d80e041a129ad158b39f1a92b5	2e8b9d115a09ba5faf9d7cde52eb5fa286145d60
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/IngestCore.dll	cceec3629ccb79c3a857661352560cfb	5d7c1faab5489a923a6fc5fa53beb12177bf5476
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/IngestDialog.dll	8809b145ce38b7ff56240ea67d13f6ec	aa280a7fe3f7af31a0bd098d1b6646481a372f4f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/IngestGlue.dll	3faa46fae51d2d48d23191f780a31fa9	aa7b3c017315d71c71787a1fa5ef805b931a53c2
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/IntelEncoder.dll	d0c8b9244a41810627b880ca295d29d6	a043e296ca99e286defea47b81f53a55c202249f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/IPPMPEGDecoder.dll	538484f4283b4ba06eb6e4e02db4dd77	04b07071ccf5fe976bb14207cb05b47089efc527
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/JP2KLib.dll	473552c7b8ccececd779625d49676e1c	3775e21f9c2c644460e15d1f2315ff24b740a33e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/kdu_v75R.dll	48531bfa6b37e71abdfa9b06ab6c5a47	41efa5f8d0e975f57dd1b21125c9fa3a27c91315
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libcairo14-64.dll	4a7227c4fe9b7d82854efa15dec687ab	5b7254a62da2f7cfef67792c579103f2fd624bd0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libcurl.dll	eb1db132c9dfd67252712e67951f87f7	0447fbf59634eb57833cf1d8c330ee66c6e4334a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libeay32.dll	0affb6448c5d99f7e41e1bea443ad826	7a846a5b7bfce686edf03fddb9e3a777559c79f4
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libgio-2.0-0.dll	7beb2f15c434feba0ed561bb7ea3d8db	9321a8caf099b6a704cafa4ccb912fe76f5ae7fb
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libglib-2.0-0.dll	52ff5c9277acc7238b348d5694a2f6b0	a70584eb8cd91bd5425a9bb3e32ca4aebb8d2546
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libgmodule-2.0-0.dll	f6073a01679c38eff3a52b68f3eb3734	bc246f4a18b11bf9c25c45c456e5381f3bc949a0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libgobject-2.0-0.dll	560015146b470e9ef9a382751aba2604	d9fb9861b93386d907ee74e276225a4a671e1754
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libgsf-1-114.dll	b74f0337de415d053df380a5a4dafd9b	ce97adb19f69f2cdbf6cb9c19285518fa2eb35f9
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libimalloc.dll	f144a689305370c763fa9c4edaa7e12a	90b018878fb1373bc745c53ee1a77f316cc539c5
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libintl-8.dll	cc496b8421fa2460c3ae6fd181cdfd44	9f6705e909463138dee5d81a87a09327e0d464db
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libiomp5md.dll	e8ba99710ed83e36a2821ed11fd8d48a	576184ca5fe3c1af9c89a08b0f218f38b0cb611f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libliveedit.dll	f0669a20949002483c373eb2906a37d2	050cbc90f282bab328d8864ec67a803fe55edf70
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libmmd.dll	113031b8de31830ee921bc4500dcb19e	3f6dcf7de0f9859febc1fb58a2688648f6933f07
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libxml2-2.dll	32679ddeb88d72614497a457ec62a975	9e5bab84342f16f345bbdd370d9d3efcc979ae9b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/libzip.dll	73d95288516a1c8c86a8e88cbc7b49e3	d336396741b1c180db53b00249a8502954322ecf
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/LIST.dll	020a553a6b7308206eea8203e6ec7bd7	eafef59ff9c361f27ac3d79aa5bd1514e47616d6
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/LogSession.dll	dd8d3391c7de55cb26d260a97711b1e7	4c32050d6304d93821b2d4c897798e4b1f123794
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/LogTransport2.exe	c92db3df9ab4192565007c5911c97ed6	d63efa7db96fcc9cb467b2a915948df176e6dcc1
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/M.dll	cab6972f96a81303d508273ea34ebd14	787db1782b873d77fa2791109b1186434ac87cf0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MBCProvider.dll	d8b98a9857c05a31bf9d8765e40ccb61	387527f81998a6314760f7d54004f00a05c539db
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MC.dll	d8570a66649b069dbb7fe7c68e09a3ed	f56e3d7a04f3035c696babf5ce728c415676b775
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_bc_dec_avc.dll	7234645a125f9e08f8e043e3e1cb9644	3935c7bd204a1de1f781ea725b2485c7f36358a5
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_bc_enc_avc.dll	ef71078136520549813d56cd8218c9e0	c5f694778dd2b7a6d06097b7c20855064a3706d9
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_config_avc.dll	ebcec78b7d7202084afec6bdc27f872b	551716cac61e094c3350a6e9eddfde1c6b01b74d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_config_mp2m.dll	a9ed21e63c0b71876301cd946335a564	0de20370ecff128fa6b4a431fce6faa957068a6d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_config_mp2v.dll	16d707ec2ea660e5bfa3a5dda0f7ccf4	b7e9671e4f976720761186cafd5d9fada6128dc5
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_config_mp4v.dll	bfe152cbf378dac32c3ccd86d68e95ea	3d6996e17b20c3b9add1918e3904ce382930f8f1
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_config_mpa.dll	c11c53c4681a924e31261d606785b124	329d58af9ca0fcf64dae094dc8c8c6f5eacad8be
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_config_pcm.dll	353e68416f4d2cd08a45382f4e36f802	f081e35a30ac3ece2190adecac0a779fd51f4efe
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_dec_aac.dll	8058cc2ce8c382e54326db0b91a9a861	ce8f26b0f1800e83ee27b499dab96b9863f25947
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_dec_avc.dll	c6d6909e9cca7d37242f4ae07f86faf3	7e5737c51c9fc82903736a68240511241a7be0e3
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_dec_dv.dll	e7a7199de321eb1c2742146824373de9	27b1a813153d2a706ea8bfb9f6dfe059905ff23d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_dec_mp2v.dll	71845997bdfacee59bc7c7422829bbeb	b77a6ce3b6f5e3e2e88b089066e53dc1fc955b9f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_dec_mp4v.dll	740ae64c0645ae6c73e6ba9340ddd6c3	fc984b5a4999630672195d278987d555201019b7
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_dec_mpa.dll	742b64c0f76109f862b1ddc399fcc8a8	543e31c70c7e126dc28aa143a5d013830d3e958e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_dec_spic.dll	70215ef0c679f997d2036f1801e79a12	74bce30919fc932e942de7b29ff15be567456ffb
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_demux_dmf.dll	ebde7f4401a80b14a3d03e3bc4a7bc6d	e127e20042b0e335061a5076a4bdc18b0c01c437
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_demux_dv.dll	d0bc17f6eb76c84a5f7b9e1b3c3dc297	52de856c69208c7b06580429c73536b0c872529c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_demux_mp2.dll	88a81b446c3855426a57794b4cecdbde	e1e7175b2457ed6bc89d4859a59dcca7ac0facbb
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_demux_mp4.dll	104ce101d0526c73fe4289ea4217e4be	34c9aca00db26facef049cfa0ff45ddffc3ae675
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_demux_mxf.dll	b58375ab26f46d56842b887fc12d0557	442f00266fb7410537dccc2b1c0aef39c1f8bc67
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_enc_aac.dll	d8103ec39191d016e67899efcb7575b5	8456f1ffeea26fd75f196c3bc6fe114b33768390
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_enc_avc.dll	d3b4656ec8a473e586cc544cb75c46a6	a1297f7fb15d663226f94bce18c6de96d167806c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_enc_avcsr.dll	dea205070e9fa3785338eee0edbff6a1	d43b762a7738a61416b59d9fc4496684b37c92b7
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_enc_dv.dll	1ee7caad405453b7470daebf6f0d11a2	dbf6d4fc1eb236f73e7c05981af3b4f672ee249b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_enc_mp2sr.dll	f4d2422c088a1dd195e5f8a4fc002e1e	5bf8032727a54cdf46d7c19cb95ae8221d2ffbe8
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_enc_mp2v.dll	45265675df31c420b66861735629d226	a5d4f6e1019d632a808d166573efd93fc3c0f5a3
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_enc_mp4v.dll	f0ca0cdb9749f027cd44033bd4bcdcea	246abd3f6e675e6ff284be9f0e3badd05a78b0d6
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_enc_mpa.dll	1484bf544c34bcf2f4bc7708b651c814	3d6918a9154c56196b655142fb05a2dda4760d6f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_enc_pcm.dll	4a3ffcd2315d66829bb1fedda4d32b54	3795bab44e85c8872cec836332b5ed21e26b2ca6
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_mfimport.dll	e3c3e2c3c95e78e63caf7a4daf1aeec3	fd0472bd0282c0b9ad9afc8ace91f467eb881f6c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_mux_dv.dll	84c97bcae63da6a5355c4b886395561c	5ae10cd9cd0602ce54a651e52724e4f726c5f135
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_mux_mp2.dll	9bb0f7adb0c0679233f67c184ca4af70	d384b7060f698e1803f3424a3cf34a8dd952ee2e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_mux_mp4.dll	8a7706cbda64544ed712389561e2b436	9378c24f6504a6f88e88e89cd6c5a47d011e03d6
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_mux_mxf.dll	0486915cbb8f9126b5c06b963685e099	7c217acabe5c1313980be3e9a459bc06f22d2e47
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_trans_audio_converter.dll	7c85bd32157e4d6e1e131403592d973b	26dac6ce93efd4e84635e8ba91a8aa34000c20a3
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_trans_video_colorspace.dll	e8deaa379c2492289191d8e9a580feb4	229c147f42a084ffe185c025def95fd55d7e4b39
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_trans_video_framerate.dll	8a24d1937dbdf19fce49e32c37a0d707	6dd4c8a6c88a2382446d4f9c020707bf43bdc3a7
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mc_trans_video_imagescaler.dll	35a9612a484ea52a92dfe828d88bb04b	228ec925775225d0af5c8d88e75c76c1ee5f1be8
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MediaCoreUI.dll	879b146e6d38dec556501604ad3c7251	7a4fc18fecf5795c66b543ee71bab48e474a1253
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MediaFinder.dll	10de57cf9f37a79ac1a80557e8235587	7672feb79e9f555861715e66c21c6ab274fee950
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MediaFoundation.dll	570b4b5f037070a03857e03ced840c20	3b406cc0aebeb5dd34cd6e05cb0c5cf280773a3b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MediaUtils.dll	fb67c47fe817855a038a5f8956322ba7	84c36eb0bc55cd147e6054aff3885352bf83a4d9
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MEE.dll	1a641cbc992e16f377a9b61bb943a9bc	8d1946845ce213092964c13aebbe1a121c78996f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/Memory.dll	88433d1ab26f8d4e68c651e8916218f9	4fe4f6fb7a5447907ad02a263891015c4ca3ebba
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/Mezzanine.dll	191c02de6bf0a6145fe897c486485b1f	7b2a3ca8f97acc9ce084cc1907188eb248a719cc
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mkl_avx.dll	7d10e4ca649aab152d1eec123a9f1876	06f76134a703c741519168df96d855281cefd1bb
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mkl_core.dll	2d29e398cf0df93af7ce35897af5b943	f2ee39acce75d516ab44f131d65c8266038e6794
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mkl_def.dll	bb316b086df35f25cfa230becf9b43c6	5f3a8e6a1e0650ba379bcae63107049fe5c929e2
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mkl_intel_thread.dll	12ac8ef347767711e555a7d8ec219447	989d62ec79d0d8064d042fc9591721ae3c01cf62
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mkl_mc.dll	680cdfdcdb82b2961d67c1af767976aa	ceab0fc08627525088165aa63f0b4e5c5e189a0a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mkl_mc3.dll	1213d2db88e24a111bd8abd978b7dc0f	0a1231cba2b23dfe2d43a03ac8862daf8602312d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MLFoundation.dll	5a1431a3ca305ee46f8d336bb9989297	558a1604e236d79a447c6c6277c59ebf205a7ef6
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MobileAppLayer.dll	acc63f58b60e4417ab79ee23f0c478a5	4b3605801aa12d47da7acf89cf8d44449b2c8c7b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MOG_Framework_5.0.14.dll	573a3afa45feaf07114881a7696a5110	0460bda4e65ceb61bee1ef1a8f03238e230bdf09
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/mp4decoder_dll.dll	30595b67be815f8b1f7f4dd0eb13616e	2438d2bb8534014d16922da2f01c0f4b6cd673db
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MPEGHDVExport.exe	6fecf73d0e600128887fbbc1966ec014	a27ec3b1d14160c0f19429c250324381f342059e
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MPS.dll	ddb4ad10892fe3b8c5865620af427469	f0de953dee3c44fe2540c53349c747535a911568
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MSK.dll	9b980a58362f0d7de01b181385ac4de9	5951697361f654443515d89c9df9e5a3cae2942b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/msvcp140.dll	9ff712c25312821b8aec84c4f8782a34	1a7a250d92a59c3af72a9573cffec2fcfa525f33
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/MXF_SDK_5.0.14.dll	b0df0b8564526b2095bf8e3ae3896886	66d887f7ebb690d4ab504f72777cf72acc7f4458
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/OM.dll	837a876aeb3759fb537a26f8248fcb08	6bed18ecbae33469de1381e458e9bd4f73e52567
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/OnBoarding.dll	610145fccaa75862255f91d31ae77c3d	b0e57a8783442757f1bc47e6edd5a82d41ba8bc5
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/OnBoardingBase.dll	7c31f535c30f42ad5bfbac4ac172b0e4	754d338bbe1d229a51bf1ae6d49a0f8f45f7f503
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/OpticalFlow.dll	2bb73c97cbbeb4752bcf2bbca2e29e39	859b950a5f70642b15c282a21d42d813ac62da6c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/P.dll	bbbedbcfa5d0b38cc555375a3e63a5ef	2b55769ca4837584d6e8cf2507cbcfd778eca351
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/painter.ini	2a783a966bc7a46ca46538dcaea0c90e	fe8a7b61a5062db61009cb84628d64d69648d497
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PF.dll	bf158f051c4b941085b2f5e6b5d9508f	5a6457a699a220b8fa467d4a0ba384701ba74aa8
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PhotoshopServer.exe	1f471f3c2b4131bdee2aa8d062c3305b	8a6921d34091306dd83639a9c121704cd55b89f4
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PIN.dll	53516eb5f27b5777ede670861380b8f7	86dd663cba0c52a4b36c537d7dfddd25e8793345
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PlatformAudioCodecs.dll	2393354dae4de5e66746504dc89c7920	7c906eb6a38c282b77a7ebc02e6b9d46fff81df2
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PlayerHost.dll	1abd27c6ccc8755eadff269f889069c3	2bfbc9a9d1a2168cf4c41c419dba7bea948760ce
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PLUG.dll	251606883bf44600ea307c6dd4427f60	8f4d8567c237dac18ee517be5026d71a74da1a6d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/Plugin.dll	734e2a72309d8fce34b21fa2b0675f78	042737c43b739c3f73b2c34b96d8a37259fd9074
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PluginSupport.dll	4f4573c245cfd46f3b1a5ebaf6d70d86	feecf3fef0f8706a37e464d24c4a2f41a147eca7
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PlugPlug.dll	c8e7b01969a4f72ad4c4f4eb85c68985	1792cbb8978f340ac22c32989caca253ea33a2d1
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PlugPlugExternalObject.dll	7d94133b651c6c8e056e0d50ead9b5d5	b672aad14a35749b1e82f6e6535a5b33dff265f5
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/postprocess.dll	81697592a924d91a80bc96a93b439f08	5e7e19919667ca3581de2921c354470eb8a249d0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PostProcessBehance.dll	033275ab5322920ca15355b506b7ac72	877215417a52a19eff9c2dcba249963bfeeb7bad
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PostProcessCC.dll	cbec07a2a22e6191d9e970be03b7c260	f750db3dec0b3a77f198ed42e7530a645549d223
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PostProcessFacebook.dll	b2adc1a3e292118035c540f798da0f8f	3c03898144a11f9674c945f85aad85f500d3e181
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PostProcessFTP.dll	9eefb8dff02975c3804ed3276f8cf74f	33aec629b5add17fa90e55f6893d4512ecd2f61a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PostProcessStock.dll	e9f38182aeadfaf62b8b5521af50115d	ff73d40d4a60e3a7b0f6d2e02b8bfc735abbcbcf
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PostProcessTwitter.dll	df643db004dcccfe11cd7743deba9840	f882dcc76279fb7ea5e132fb08004822fb387051
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PostProcessVimeo.dll	087d0e38c4ed5b4228c07354173489fd	c41457863fa0317aa698a8f967e59b1e72f328ca
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PostProcessYouTube.dll	516d08cad8bc805a780e7ae599960780	0f2d22e70efd34095f5b5324b06a3daa046c2c73
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PProDynamicLinkServer.dll	951772f99c6a88f99797dff2c6ceef02	2c25c643c7f302429ce06dce3e66e4a83eef2b2a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PProEAMediaServer.dll	b69c4b52f3f7a204a227aa242cae1d3c	6f8c9ffd6108777834268fa8aa455d678e06fc75
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PProHeadless.exe	e1d80c5b29bb385ea43a6b61ea03799f	3f1b2aafd0467051284cfd7b76c930a3423ca3af
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PR.dll	2e0918afac481319ad9cd290becefe48	525eee9a68ea8535642f325adb063deea9d48848
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PREF.dll	335015e208038426175493c42f677386	d4beb4eda163a82b5514739e19ebe57f4f5eb7d5
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PREM.dll	ce5544561f2a19d4df88530415fb28ca	f0d6f325dfe076c4c156aa9a88be4a5a0e792a11
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PRM.dll	421576541a552aa4b7931f7e03ecad85	5f7ae2149bd3e60472e300fb7873ba52fa939fc0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/Pro4OMFdll64.dll	a00724832047bf204ed982c2d3248f33	54149228b50cd3030a0cb610463225f21271184c
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ProjectConverterHost.dll	abdcfa9d1bc8c0994f758ff28aad1418	d090f5a58ae85476ae46821879bbc2b1861106af
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ProjectSupport.dll	5209484b8e6d2b5768ae096f594638ab	ab3e7c96af534823157ac7edf50d6a4c67f3c031
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ProResOpt.dll	d19fcb4ea4dd1703567245f572492621	a800bbca9929cf07369953b237c327317aa1c9c8
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/PSIParser.dll	af9c04bc6507a5be82a81dba131a6e54	ad0d00f2f6e821440d13b5694236464701e911b9
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/pthreadVC.dll	16db9f7b1f370c8a063c873649b16143	f1eac5589952690a3872d6c8e004dfecccba6bf0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/QTParser.dll	37fc91626b140c34c806d6cfc6c476f3	d2c0af70456616b73328d8569a3343f9f562ae24
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/QTWriter.dll	c7f7aa7276fc8915aa54cd37e9eced37	9ecd87aa19a19b685d212bdfac5e69b896037bc9
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/QuickTimeGlue.dll	60e7513c8bf3c3f24ebdf2b4c34e6699	9529b98954029356c6575afa01c8345a2315cc00
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/RadialController.dll	5a7d29011a54468d400250b21c2fe11e	0fdf382763a1c4d46f19c131b4903ec3fc635f0b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/RecorderHost.dll	b5136bf217ba1f7253e5f407cb296af4	be0a665d234ae525791d2efc14b6802bb302a125
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/REDCuda-x64.dll	3ab4b398c3bce7f50e450ad9eb6f0aa0	b19886ab8c60edebe97d013b91a0998471528bbd
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/REDDecoder-x64.dll	3a8405a7a9f1124e89466777208bb231	1f295553de516fd28463961d12d53e10bd8b4960
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/REDOpenCL-x64.dll	2d98f01e3896e4865fd93932c09b2ce9	14b2715edb5da105b3a5cbecece509dc5b5c718d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/REDR3D-x64.dll	7886a19ed7847cca257f2327fd1f6753	fe96be16f5ecef974567bcd1001b28a24f48b6cd
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/Registration.dll	207089d717b12bee8773ecbe3d8ae717	9ad43fac593b445189509b082426c1009d5a006f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/RendererCPU.dll	a4b7ad1a665db51ef6484e619000ba87	28e5bb667c03434e281c27d12113deac2a618fdf
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/RendererGPU.dll	e10e38e7bfa00a0ba2de0a831ebbb8d2	7c7edea477519218ea22f0c883babeadd0f54292
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/RG.dll	dbf518bbd1dc0a0238bdc0e3688230da	feae9de528d2b126a79c9a06cb7de01c5dd5e0d5
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/RuntimeInstaller.dll	7bb2268bfa8d1f596caf7bb1608ae494	cfae142df150c46ab3bc3b3c684afb58590cd174
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/sccore.dll	432056ef3bf14dfbadcd63ce177e8e2b	2fa893183ca6b5ada506eee882e04ab6b5458100
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ScriptLayer.dll	b4db3422c1c2487b9135601fae493bc3	5ee539f39c2a8f9b7628c07b462c5705700a66fa
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ScriptLayerPPro.dll	869492dc8ee0708d870dbf103dbb6635	9aeaaf60c5539077c0caa664cd3d52466ac26e38
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ScriptLayerPProQE.dll	ddd1499748dfe9e4ff70097357fe3acc	5795e8e2826bc26fb581eb49edcef3806c0b7305
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/SettingsUI.dll	19c83f7b3a5dfd46f26d40d6c53549fd	7a09f4fc84cdcfad1f32078d71bfb8f299c1d489
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/SLU.dll	956798397fb53b51f6859ea4723a4640	53fc06c0f5cc13d12a9280815ff0935fa2c654be
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/SMDK-VC140-x64-4_15_0.dll	aa76047e73b1bedc30dcc76d0557acf5	aeb326e1fd84fbe300733ff2bfe5b595930a3f50
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/SND.dll	e4dd374d3c3a3deb0056601342755a04	f06af1aef35b16702961ff94124d227006f69126
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/SonyRawDev.dll	069d114b01bdf64e713fcc4239817bd2	05edb882e09146aee60d56216367eb0f9dcbea67
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ssleay32.dll	064a27f68ecc5a51b701a4e804c90f21	4f811790b196af76ad20e516c3809146e6041af6
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/svml_dispmd.dll	5729484d5ecb66fa3255f3b408542e91	aa3ff87cdd7f0c1ef739954a732231c938a7c794
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/SweetPeaSupport.dll	9f13ebdfc5953d50dfcaa365c78be6bd	aa0a827e23cb41b635f8eb39d54470be63589f2d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/SynKitLib.dll	00cf664885d8bb636d81525045280aca	e01feac8e0a9dc52cf7fe7ffdf5eaf8c517faf52
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/T.dll	9779bb1ecf1bfabb3aa5eeb046d4fce2	ba84561c43f756f2ccb77a50dfc14eacba5d0c0b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/tbb.dll	a2a418b3182d29ebe6ea10e8c1f61161	d8d815395507f21723ee7e5e5b69249ae3b55f6f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/tbbmalloc.dll	a8ca9f27eacf69865005e55e7eb8465b	3c2aa67596c0430428f3db4dc6696a6d82df535a
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TDB.dll	5ec36d5dcd3337ef6510097f2fdbedb9	06edd25cc3c25dae4edce0a0cc8d0179ef05547d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TDL.dll	9dc35bd02c7f78b703d7eb1b48b9249f	a02ee12844dfda05f042e8c11ee5558abc2de608
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TeamProjectsLocalClient.dll	114f4797b18285fed690f3ab03ec2582	d2e12298e1e8d74b69c2144e314198eb9a540e13
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TeamProjectsLocalHub.exe	0ef7c1ab6b9288434e2d96bd80ea1792	32448a31ca0573eeb769049ebba4a0d10fade8ff
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TeamProjectsLocalLib.dll	e245f40e34c5d018109cefafcd3fd25f	0bf3f1e57d215a1a42a22d4416fed0ec20d70f80
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TimeCarving.dll	3261a577e2bfe26fd5c283f06f47ee4d	3ce59950651dad508db399340114e361e9b032df
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TitleCG.dll	e718aafd37722eb1ec595f5e9b08a17a	0ac1f96173adb7726bd3add87792c266468c9b78
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TitleCharacterFactory.dll	b00ff9f8f22857c7a31fa97431fd6e4c	cc0b91e68367cec42d03af6c8b16262e070c0aa2
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TitleImageManager.dll	33c01a24bad03f3582ed595e4102729a	308d9e2f3fb6289b427dba03b17dae3ab2ecc54d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TitleLayer.dll	698d5de77668863de685011237ce086c	b7c710a115a4a427423af6b30d54e081ba0cdb50
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TitleLayout.dll	67ab93f0b809cb9dc97a271956823797	5a3f8ed5eabf18ffb0c45e5268ebdaaa0b284856
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TitleRenderer.dll	6403eafded23de793b02502a52024b11	a16070c210c41b76723446c5c08eb886689ab376
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TransmitHost.dll	92084e696a84a6c0c82cad63257c6cfb	05d2f3f716bc58d079cee1cf60d9127437edaf64
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TransmitVRHost.dll	55bc31a8901a2cad4e7d476f09d49956	bc57dce4556d0549f66b90807f0daf8a2e9448b5
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TSSourcePush.dll	198741aeffdeeae2615d2153c86e8fcc	cd21e09ff25b084a872299a660ca7a495713e8b8
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TSStrider.dll	7d4f6183d415018bbfe59630a27e6d66	a02b173480cb2333ada8cfc5bba9a479198563d2
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/TXT.dll	2c8eeb4606ca5278ad174b73d0cfa944	c3084f0ee6127ff369304054da77fc3250742d26
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/U.dll	ff5841c3fe96b61a6b41aa8a19498335	c7e4aa78bd40ff4efac29b559a59dd2fbcdf07d0
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/UIFramework.dll	b15e3f3fb0a3a741e249f7008f35de58	29a66a5b77eeda9542b99fbc48046e8adc3494e9
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/updaternotifications.dll	a0dcece3533422552fa93752beb4f3ca	35de88163a8bdb191d53d24e7cb8f3bbf9525bc9
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/v8.dll	7c18fad6f5ef6be0e5d24d3cbc3c7575	ce8e4617da4922a764c42d15e28b7412640df8a4
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/v8_libbase.dll	9edd546cbd083f9b15702a5c4463a028	d8a9516075b271b46c2ce05aadb7ea59ee97cc00
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/v8_libplatform.dll	d85bcc47253bb894064f91789ae81dde	5a9186b20da96ff54547c4bb1ab57537563a272d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/VAL.dll	c7396bc70dfd5c122606c9ee8c9e53b3	ce57182e8b13c1cbeafc4b668ca4bacad6d97590
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/VfWFileWriter.dll	40d5846f9cc53ef95c49f8fcc5e311cb	797c5de576ef42f8d4a57d120940c873ace4924b
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/VideoFilterHost.dll	b4995bf0ce8175d2c8bd9fd3963d9809	498eb7367b60ea18f357c2f00a00e50779d0e394
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/VideoFrame.dll	68265195a882d682730051c2192eb3c0	ce315fcbfc7bee14d5c0db57a979ddf7802da636
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/VideoRenderer.dll	36fa0179a61098d7202328afcc7ad806	0818e58f3dbfdc0d97f757ac62b35b9e5f13d85f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/VulcanControl.dll	a162810155a84f73b480acd2dc75a0c1	bd647f324b1a47f78aed267cd137c0ed1b932cb5
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/VulcanMessage5.dll	db8a31260361a58bbe80c329a117406f	e113a28cdcd216ea8ac8d7bdc7a82ac86566514d
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/WRServices.dll	d4649b751f7a2604ed6c18968080421e	ec9b6ba656d7259fbcb732e376aa88396c1fee40
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/xerces-c_3_1.dll	e6c6414be6dd9d57388d74156bfde780	bc6ec9f52d9bfc504a743400bce64c640eff6aaa
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/zlib1.dll	72ce7ccc1f14ab157d2c13522c6d9773	8a2627fcae7f3bd2d747ba753f887e6e8f05f84f
+D:/Adobe/Premiere/Adobe Premiere Pro CC 2018/ZXPSignLib-minimal.dll	5f998cef7a8893ba73a75992177b8f33	5d64093a778730b608f446966e98bc524be13781
+D:/anaconda3/.nonadmin	d41d8cd98f00b204e9800998ecf8427e	da39a3ee5e6b4b0d3255bfef95601890afd80709
+D:/anaconda3/_conda.exe	60eb51f7f66cc67d121d7a7c8201f772	266796d7cf8dd387bda7c333dae6fdf4f67c7a86
+D:/anaconda3/api-ms-win-core-console-l1-1-0.dll	e5912b05988259dad0d6d04c8a17d19b	724f4f91041ad595e365b724a0348c83acf12bbb
+D:/anaconda3/api-ms-win-core-datetime-l1-1-0.dll	16789cc09a417d7deb590fffe4ed02dc	4940d5b92b6b80a40371f8df073bf3eb406f5658
+D:/anaconda3/api-ms-win-core-debug-l1-1-0.dll	9476affaac53e6e34405c4001f141805	e7c8a6c29c3158f8b332eea5c33c3b1e044b5f73
+D:/anaconda3/api-ms-win-core-errorhandling-l1-1-0.dll	a5883c68d432f593812ab3b755b808db	51cbb7ba47802dc630c2507750432c55f5979c27
+D:/anaconda3/api-ms-win-core-file-l1-1-0.dll	241338aef5e2c18c80fb1db07aa8bcdf	9acbeef0ac510c179b319ca69cd5378d0e70504d
+D:/anaconda3/api-ms-win-core-file-l1-2-0.dll	49c3ffd47257dbcb67a6be9ee112ba7f	04669214375b25e2dc8a3635484e6eeb206bc4eb
+D:/anaconda3/api-ms-win-core-file-l2-1-0.dll	bfffa7117fd9b1622c66d949bac3f1d7	402b7b8f8dcfd321b1d12fc85a1ee5137a5569b2
+D:/anaconda3/api-ms-win-core-handle-l1-1-0.dll	cce27ff9b1e78b61955682788452f785	a2e2a40cea25ea4fd64b8deaf4fbe4a2db94107a
+D:/anaconda3/api-ms-win-core-heap-l1-1-0.dll	cdc266896e0dbe6c73542f6dec19de23	b4310929ccb82dd3c3a779cab68f1f9f368076f2
+D:/anaconda3/api-ms-win-core-interlocked-l1-1-0.dll	39809cc5dabf769da8871a91a8ed9e69	f779cdef9ded19402aa72958085213d6671ca572
+D:/anaconda3/api-ms-win-core-libraryloader-l1-1-0.dll	5d5fae1a17961d6ee37637f04fe99b8a	47143a66b4a2e2ba019bf1fd07bcca9cfb8bb117
+D:/anaconda3/api-ms-win-core-localization-l1-2-0.dll	588bd2a8e0152e0918742c1a69038f1d	9874398548891f6a08fc06437996f84eb7495783
+D:/anaconda3/api-ms-win-core-memory-l1-1-0.dll	6def20ed13972f3c3f08dba8ecf3d6cc	9c03356cf48112563bb845479f40bf27b293e95e
+D:/anaconda3/api-ms-win-core-namedpipe-l1-1-0.dll	a056d4eeaae37deab8333dcc4c910a93	cb59f1fe73c17446eb196fc0dd7d944a0cd9d81f
+D:/anaconda3/api-ms-win-core-processenvironment-l1-1-0.dll	f3b4ab35a65a8d938c6b60ad59ba6e7f	2745259f4dbbefbf6b570ee36d224abdb18719bc
+D:/anaconda3/api-ms-win-core-processthreads-l1-1-0.dll	5faf9a33bab1d39dd9f820d34339b3d4	50699041060d14576ed7bacbd44be9af80eb902a
+D:/anaconda3/api-ms-win-core-processthreads-l1-1-1.dll	d699333637db92d319661286df7cc39e	0bffb9ed366853e7019452644d26e8e8f236241b
+D:/anaconda3/api-ms-win-core-profile-l1-1-0.dll	7028cf6b6b609cb0e31abd1f618e42d0	e7e0b18a40a35bd8b0766ac72253de827432e148
+D:/anaconda3/api-ms-win-core-rtlsupport-l1-1-0.dll	2166fb99debbb1b0649c4685cf630a4a	24f37d46dfc0ef303ef04abf9956241af55d25c9
+D:/anaconda3/api-ms-win-core-string-l1-1-0.dll	b7cbc8d977a00a2574e110b01124ed40	637e4a9946691f76e6deb69bdc21c210921d6f07
+D:/anaconda3/api-ms-win-core-synch-l1-1-0.dll	6961bf5622ffcd14c16fbfc1296950a4	5584c189216a17228cca6cd07037aaa9a8603241
+D:/anaconda3/api-ms-win-core-synch-l1-2-0.dll	47388f3966e732706054fe3d530ed0dc	a9aebbbb73b7b846b051325d7572f2398f5986ee
+D:/anaconda3/api-ms-win-core-sysinfo-l1-1-0.dll	df50047bbd2cf3a4b0cf0567514b464c	f20ae25484a1c1b43748a1f0c422f48f092ad2c1
+D:/anaconda3/api-ms-win-core-timezone-l1-1-0.dll	f62b66f451f2daa8410ad62d453fa0a2	4bf13db65943e708690d6256d7ddd421cc1cc72b
+D:/anaconda3/api-ms-win-core-util-l1-1-0.dll	a1952875628359a0632be61ba4727684	1e1a5ab47e4c2b3c32c81690b94954b7612bb493
+D:/anaconda3/api-ms-win-crt-conio-l1-1-0.dll	6c88d0006cf852f2d8462dfa4e9ca8d1	49002b58cb0df2ee8d868dec335133cf225657df
+D:/anaconda3/api-ms-win-crt-convert-l1-1-0.dll	d53637eab49fe1fe1bd45d12f8e69c1f	c84e41fdcc4ca89a76ae683cb390a9b86500d3ca
+D:/anaconda3/api-ms-win-crt-environment-l1-1-0.dll	c712515d052a385991d30b9c6afc767f	9a4818897251cacb7fe1c6fe1be3e854985186ad
+D:/anaconda3/api-ms-win-crt-filesystem-l1-1-0.dll	f0d507de92851a8c0404ac78c383c5cd	78fa03c89ea12ff93fa499c38673039cc2d55d40
+D:/anaconda3/api-ms-win-crt-heap-l1-1-0.dll	f9e20dd3b07766307fccf463ab26e3ca	60b4cf246c5f414fc1cd12f506c41a1043d473ee
+D:/anaconda3/api-ms-win-crt-locale-l1-1-0.dll	ab206f2943977256ca3a59e5961e3a4f	9c1df49a8dbdc8496ac6057f886f5c17b2c39e3e
+D:/anaconda3/api-ms-win-crt-math-l1-1-0.dll	4dd7a61590d07500704e7e775255cb00	8b35ec4676bd96c2c4508dc5f98ca471b22deed7
+D:/anaconda3/api-ms-win-crt-multibyte-l1-1-0.dll	4e033cfee32edf6be7847e80a5114894	91eef52c557aefd0fde27e8df4e3c3b7f99862f2
+D:/anaconda3/api-ms-win-crt-private-l1-1-0.dll	50740f0bc326f0637c4166698298d218	0c33cfe40edd278a692c2e73e941184fd24286d9
+D:/anaconda3/api-ms-win-crt-process-l1-1-0.dll	595d79870970565be93db076afbe73b5	ec96f7beeaec14d3b6c437b97b4a18a365534b9b
+D:/anaconda3/api-ms-win-crt-runtime-l1-1-0.dll	8b9b0d1c8b0e9d4b576d42c66980977a	a19acefa3f95d1b565650fdbc40ef98c793358e9
+D:/anaconda3/api-ms-win-crt-stdio-l1-1-0.dll	76e0a89c91a28cf7657779d998e679e5	982b5da1c1f5b9d74af6243885bcba605d54df8c
+D:/anaconda3/api-ms-win-crt-string-l1-1-0.dll	96da689947c6e215a009b9c1eca5aec2	7f389e6f2d6e5beb2a3baf622a0c0ea24bc4de60
+D:/anaconda3/api-ms-win-crt-time-l1-1-0.dll	6b33b34888ccecca636971fbea5e3de0	ee815a158baacb357d9e074c0755b6f6c286b625
+D:/anaconda3/api-ms-win-crt-utility-l1-1-0.dll	54f27114eb0fda1588362bb6b5567979	eaa07829d012206ac55fb1af5cc6a35f341d22be
+D:/anaconda3/concrt140.dll	c7ea19f01b48fd3a23effbb4d81b8351	2bfc38fbc65ed5367a1f8d10808707d8d9d39eaa
+D:/anaconda3/cwp.py	884bd463c8011ae31a59a264a1cb4f8c	062320679f8cf6c358ed7a49a6211772ce9c14f9
+D:/anaconda3/grb_ts.exe	5cb875cbee38c6341b33e44b9fe0e76e	b21cf3d3c9333f0122870b74e3d9055c17095ce6
+D:/anaconda3/grbcluster.exe	6de105093eef0b9d5b3e525dc0fb299a	58208a65c0f22d9b1e615d8fce7ae4153aa6ceb8
+D:/anaconda3/grbgetkey.exe	923e1363884564e4338c55c7c81e0a14	92576f8dd19b24171455ceadd238398f698beb33
+D:/anaconda3/grbtune.exe	ef33a913a853dfdd5fa869c08a61c381	789da53c85da7410d69fdbcb959cb686ff1f54d3
+D:/anaconda3/gurobi.lic	dd0695499075276bfcd680de1a1e9fd1	7fb3ada0500385293eadc83993cda9ff8ad0f4e3
+D:/anaconda3/gurobi_cl.exe	246acd1983e60b0b8b8ff453f8192f4f	2240f878062823476d9f915a89f3e85b063b44b6
+D:/anaconda3/gurobi91.dll	a5494400b59bc71c074222fa077dd3be	f31f571ad81cbcca246dd36d293b463a482b4e57
+D:/anaconda3/LICENSE_PYTHON.txt	203a6dbc802ee896020a47161e759642	8c99330b2c56b327357927017fee2ffbb6ace001
+D:/anaconda3/msvcp140.dll	ba72c2f6f465926980adc2fb7f8b3490	63de0e3c14d0f45c1edab1c3ecd4adfb78ee8cdd
+D:/anaconda3/msvcp140_1.dll	18a6c1a3d630dfcbc227082d5b06681a	6634a25660e5843cf7fba6dc09b9dfcb698432a5
+D:/anaconda3/msvcp140_2.dll	a7f495ec0db18ba5340d380341ae80e9	f08a414335f9d9a2bbce74cb1479807a1ce76178
+D:/anaconda3/python.exe	dc300c23e60d8b717d2b2d7e6238d120	bfcedce95b2c016b54608ad135a014a4f76d6ba1
+D:/anaconda3/python.pdb	723e4468c50d6db8addad5d4223940ab	8e89f6a8af45333adc2f74ba6192bad753a1ceb8
+D:/anaconda3/python3.dll	194c51ddbd778a56d95afa7b0c366440	1a1f614a5e1af342170f2ed48a65737c668887c6
+D:/anaconda3/python38.dll	2169046469a5c6c1cd64411c01421955	94e817bc87a1ea2ebde30f2d4807fb950d1dd1b5
+D:/anaconda3/python38.pdb	676c676bca2062f08fd53456821e4ae0	3b7c1ec1e2f3ecf32b9ccdf5cbafe7b02dd3492c
+D:/anaconda3/pythonw.exe	22d8e99df57b284d073d807d19f449d2	e1ba447114670204918c66c4753ccd210f64d74a
+D:/anaconda3/pythonw.pdb	631eba88970b70a25187267be2f198bb	b96e2d6db9d8f53f9e17624985b66fd9ce0feebf
+D:/anaconda3/qt.conf	2163f23c2e4f4d8b47c17f699702b0bc	6197e9bc3a765a1bd3381e3869f2bc28879f4dc5
+D:/anaconda3/ucrtbase.dll	0e0bac3d1dcc1833eae4e3e4cf83c4ef	4189f4459c54e69c6d3155a82524bda7549a75a6
+D:/anaconda3/Uninstall-Anaconda3.exe	67eab2ec1b7a601a7a94c70556642654	bf8ec7f17591ea3a8a93c6e3b4407dd3ee0ab2ce
+D:/anaconda3/vccorlib140.dll	aaa75d38ced365d5984bb433e88f7356	dc6b2845bc01595056f8bef4b87e4e42b834288d
+D:/anaconda3/vcomp140.dll	d5980db2b3cfa73995246d7ab12fb71e	fe4d30e86e5bf5ef6a4d62f2bf724b0e8b087fa8
+D:/anaconda3/vcruntime140.dll	0c583614eb8ffb4c8c2d9e9880220f1d	0b7fca03a971a0d3b0776698b51f62bca5043e4d
+D:/anaconda3/venvlauncher.exe	8d9910b7cbc7bddcf0ebcc30dac775d1	2b59d692d090a55c1eea14dc1d291c983e51bad6
+D:/anaconda3/venvwlauncher.exe	fa4d8bb9e93020d533933962ee197d2f	2e9e405152f0ed0619e2c5ad87bb28d9338f6ce4
+D:/anaconda3/vslauncher.exe	a0ba69913d03447e1c6cde01fcdf5983	2f5a3377efc499e555f0c7e821cb831e3e003b0f
+D:/anaconda3/vswhere.exe	3388d098867331822f6a90d2991939cd	bba9bfff2c8bf78ac194a5e2e7698ddd9c0ee5c0
+D:/anaconda3/xlwings32-0.20.8.dll	42eeec7338b104cd0b3704aa08002740	cf1ff1d6486e3f37bfd6dd11b9c2df828f88aa8c
+D:/anaconda3/xlwings64-0.20.8.dll	f36da1c45c6e9c5c41d3919f7ca32ecd	0f1a0f72b132f67cd625b620251806d56c2ac7ae
+D:/Navicat for MySQL/dparser.dll	c34c1954733909ea24c71df40e5329bc	66070fe8a0a9642fc8b8937afb4ee208c2d48b82
+D:/Navicat for MySQL/libcairo-2.dll	b2bb842451a11585d73b3eb65878ece9	fc8a727282761b438ea80f506d570fba12fbb61f
+D:/Navicat for MySQL/libcurl.dll	9d1338522e1f68ca23248c7bda93f952	45ff27e92b1a0ccc85b8b03d3d4f2e377927ede1
+D:/Navicat for MySQL/libdd.dll	642ff502dfd176fe7d03d471811c284c	a8953937af2a816fc6cc024ff6e1132d84d196e5
+D:/Navicat for MySQL/libeay32.dll	1e3784afde1d8a65c767476ea817b6f8	4f7264dfbe5659101bdc0db77b6384be28099073
+D:/Navicat for MySQL/libexpat-1.dll	a885413bb090e288fba73eff0ec46412	122b721b82bff23d527c6789567a7406defb7e93
+D:/Navicat for MySQL/libfontconfig-1.dll	085caaeae0666f81d05861264f696633	d38cf0ee07504333cf4981586586e748d6fe43fb
+D:/Navicat for MySQL/libfreetype-6.dll	ae46a6e618fe71848140e924fcbf3e6f	d85fe6ab3c4bf3a38738b89d8d3755353b685827
+D:/Navicat for MySQL/libmariadb.dll	02207e4772d8ff62b250a888abd4cc17	ba9dfb05a1ed500895e05b4d2aa645ebfc7d7054
+D:/Navicat for MySQL/libnsy.dll	5156de87c73f6057e434ef139790b3f7	1e5aca8a5d2d2d260859572ebcf4e5df50d47522
+D:/Navicat for MySQL/libpng14-14.dll	3e00f7b9b98859f4650eb7a473485af9	ec88fb8b8bd9a46e7f7629c4201733f275f4b200
+D:/Navicat for MySQL/license.txt	408ea62310f873547d7a8de356d7738a	ed8d7b3a1cfd4f7d2aa0b63cd419c3f907974f44
+D:/Navicat for MySQL/msvcp110.dll	7caa1b97a3311eb5a695e3c9028616e7	2a94c1cecfb957195fcbbf1c59827a12025b5615
+D:/Navicat for MySQL/msvcr110.dll	7c3b449f661d99a9b1033a14033d2987	6c8c572e736bc53d1b5a608d3d9f697b1bb261da
+D:/Navicat for MySQL/navicat.exe	a61c1e041ddfb3f8a72cfb3fc31bb9c0	9d389bb46675cc87da5762a3feda84e53b7a9654
+D:/Navicat for MySQL/navicat.pdf	5c019a8e19238f497e45ea1464115509	a6867da5c73fe817d47f146d0b6d92b80bcaf240
+D:/Navicat for MySQL/navicatelevation.exe	194d9fad283a0e05a29813f29f23db96	65bad0314b8cdfefef2883ad2dfe1606edec0e5c
+D:/Navicat for MySQL/nparser.dll	c99d2aa62c8c77fc4094bc19d6a5a4b3	4009c0ae181be981e572fadf5e5913a2711248d8
+D:/Navicat for MySQL/ntunnel_mysql.php	8270d5d0b20b6f37e03c8576c8a171a9	3c6f5c1a03397cf058230cf4bd4f3f1c1109a224
+D:/Navicat for MySQL/PatchNavicat.exe	10627cee504861eb7ebcf25c596c3ea7	1c3d59b2ef3b91b36d773ba687c0bb78af8b82b8
+D:/Navicat for MySQL/registration.url	766ef390af6a927eeb6d07a43bbbebe7	1084bab02410c0c8e93c12fa974b85821f53dafc
+D:/Navicat for MySQL/scilexer.dll	11121a9993a6153a92652fd059e80149	2b23a1762726500364eee3f6af948309611e0775
+D:/Navicat for MySQL/sqlite3.dll	d490e42ec25135e32463be367eecb7a6	d20f4eb36daeead308cd004da3ab5886ea7d451f
+D:/Navicat for MySQL/sshmgr.dll	906ac9115cccf4a39a4c644d6fb449af	5bc7257b7e7303a92f2dc145ac969aa41e79d882
+D:/Navicat for MySQL/ssleay32.dll	dbb8b02f92d1f0d9f76bf11b68691a4f	c3f77ab44b95cec8059073705c4d99ef67567fa2
+D:/Navicat for MySQL/support.url	c5d0d421a5c6d6302f3737d5c29512c6	1cfa65615a8190e6491219cb2f03c3fb464ca5bb
+D:/Navicat for MySQL/unins000.dat	c8e6bb29068cd3649ab02bd7a5abd7fa	b839ca9cd4c8c98691e386867f017af5d76d3d33
+D:/Navicat for MySQL/unins000.exe	2de8dc9fbe47c7fe12f660fe43f22dfd	a40153a2d886bd4b3d927485e58327c184c010fe
+D:/Navicat for MySQL/updater.dll	be3d4a9c2bc4ddbf9c39102e99f73195	c230f4bb35fc0deacdffe4bb00bc4e702d14403e
+D:/Navicat for MySQL/zlib1.dll	e46974d7609bcc5ee3f9014982368c32	e6eb0023288fdc29e5a4e14ed712fe5718c64530
