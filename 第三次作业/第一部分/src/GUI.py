@@ -18,18 +18,18 @@ class PopUpDialog(Toplevel):
         self.parent = parent  # 保留父窗口
         x = parent.winfo_screenwidth() / 2 - 200
         y = parent.winfo_screenheight() / 2 - 50
-        self.geometry("+%d+%d" % (x, y))        # 设置窗口位置
+        self.geometry("+%d+%d" % (x, y))  # 设置窗口位置
         self.text = StringVar()
-        Entry(self, textvariable=self.text, width=60).pack(side='left')     # 文本框居左
-        Button(self, text='确定', command=self.get_text).pack(side='right')   # 按钮居右
+        Entry(self, textvariable=self.text, width=60).pack(side='left')  # 文本框居左
+        Button(self, text='确定', command=self.get_text).pack(side='right')  # 按钮居右
 
     def get_text(self):
         """
         获取文本信息
         :return: None
         """
-        self.parent.key_words = self.text.get()     # 读取文本框信息
-        self.destroy()      # 销毁当前窗口
+        self.parent.key_words = self.text.get()  # 读取文本框信息
+        self.destroy()  # 销毁当前窗口
 
 
 class MY_GUI(tk.Tk):
@@ -38,16 +38,13 @@ class MY_GUI(tk.Tk):
         GUI窗口初始化
         """
         super().__init__()
-        # self.init_window = init_window
         self.title("异或加解密")  # 窗口名
         width, height = self.maxsize()  # 获取屏幕最大值
         self.geometry("{}x{}".format(width, height))  # 窗口最大化
         # 标签
         text_width, text_height = int(width / 8), int(height / 20)
-        self.preview_label = Label(self, text="文件预览")
-        self.preview_label.grid(row=0)
-        self.log_label = Label(self, text="日志")
-        self.log_label.grid(row=text_height + 1)
+        Label(self, text="文件预览").grid(row=0)
+        Label(self, text="日志").grid(row=text_height + 1)
         # 原始数据
         self.orig_data = ""
         # 密钥
@@ -67,18 +64,14 @@ class MY_GUI(tk.Tk):
         scroll_log['command'] = self.log_Text.yview
         self.log_Text.config(yscrollcommand=scroll_log.set)
         # 按钮
-        self.button_open_file = Button(self, text="打开文件", bg='lightblue', width=10,
-                                       command=self.open_file)
-        self.button_open_file.grid(row=1, column=text_width)
-        self.button_key = Button(self, text="输入密钥", bg='lightblue', width=10,
-                                 command=self.get_key)
-        self.button_key.grid(row=2, column=text_width)
-        self.button_encrypt = Button(self, text="加密", bg="lightblue", width=10,
-                                     command=self.encrypt)
-        self.button_encrypt.grid(row=3, column=text_width)
-        self.button_decrypt = Button(self, text="解密", bg="lightblue", width=10,
-                                     command=self.decrypt)
-        self.button_decrypt.grid(row=4, column=text_width)
+        Button(self, text="打开文件", bg='lightblue', width=10,
+               command=self.open_file).grid(row=1, column=text_width)
+        Button(self, text="输入密钥", bg='lightblue', width=10,
+               command=self.get_key).grid(row=2, column=text_width)
+        Button(self, text="加密", bg="lightblue", width=10,
+               command=self.encrypt).grid(row=3, column=text_width)
+        Button(self, text="解密", bg="lightblue", width=10,
+               command=self.decrypt).grid(row=4, column=text_width)
 
     def open_file(self):
         """
@@ -113,8 +106,8 @@ class MY_GUI(tk.Tk):
         :return:
         """
         try:
-            pw = PopUpDialog(self)      # 弹窗
-            self.wait_window(pw)        # 等待
+            pw = PopUpDialog(self)  # 弹窗
+            self.wait_window(pw)  # 等待
             if self.key_words != "":
                 self.write_log_to_Text("已读取密钥")
             return
@@ -126,23 +119,23 @@ class MY_GUI(tk.Tk):
         加密原始数据并保存结果至*.txt中
         :return: None
         """
-        if self.orig_data == "":      # 文件未读取时提示打开文件
+        if self.orig_data == "":  # 文件未读取时提示打开文件
             messagebox.showinfo(title="提示", message="请打开文件")
-        elif self.key_words == "":        # 密钥为空时提示输入密钥
+        elif self.key_words == "":  # 密钥为空时提示输入密钥
             messagebox.showinfo(title="提示", message="请输入密钥")
         else:
             try:
-                result = xor.encrypt(self.orig_data, self.key_words)        # 加密文件
-                self.preview_Text.delete('1.0', 'end')      # 清空文本框
-                self.preview_Text.insert('insert', result)      # 预览结果
+                result = xor.encrypt(self.orig_data, self.key_words)  # 加密文件
+                self.preview_Text.delete('1.0', 'end')  # 清空文本框
+                self.preview_Text.insert('insert', result)  # 预览结果
                 cur_path = os.getcwd()
-                if not os.path.exists("../data"):       # 判断目录是否存在，不存在则创建
+                if not os.path.exists("../data"):  # 判断目录是否存在，不存在则创建
                     os.mkdir("../data")
-                os.chdir("../data")     # 切换目录
-                with open('encrypt.txt', 'w', encoding='utf-8') as f:       # 将加密内容写入文件
+                os.chdir("../data")  # 切换目录
+                with open('encrypt.txt', 'w', encoding='utf-8') as f:  # 将加密内容写入文件
                     f.write(result)
                     f.close()
-                self.write_log_to_Text("加密文件已保存至：" + str(os.getcwd()) + "\\" + "encrypt.txt")   # 日志记录
+                self.write_log_to_Text("加密文件已保存至：" + str(os.getcwd()) + "\\" + "encrypt.txt")  # 日志记录
                 os.chdir(cur_path)
             except TypeError as e:
                 result = xor.encrypt(str(self.orig_data), self.key_words)  # 加密文件
@@ -165,9 +158,9 @@ class MY_GUI(tk.Tk):
         读取加密后的文件进行解密并保存解密文件
         :return: None
         """
-        if not os.path.exists('../data/encrypt.txt'):       # 加密文件不存在时进行提示
+        if not os.path.exists('../data/encrypt.txt'):  # 加密文件不存在时进行提示
             messagebox.showinfo(title="提示", message="加密文件不存在")
-        elif self.key_words == "":        # 密钥为空时提示输入密钥
+        elif self.key_words == "":  # 密钥为空时提示输入密钥
             messagebox.showinfo(title="提示", message="请先输入密钥")
         else:
             try:
