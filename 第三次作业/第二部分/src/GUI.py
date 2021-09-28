@@ -81,6 +81,20 @@ class MY_GUI(tk.Tk):
                     self.log_Text.insert('insert', file + '\t\t\t' + res_md5 + '\t\t\t' + res_sha1 + '\n')
                     res_md5_list.append(res_md5)
                     res_sha1_list.append(res_sha1)
+                cur_path = os.getcwd()
+                if not os.path.exists("../data"):  # 判断目录是否存在，不存在则创建
+                    os.mkdir("../data")
+                os.chdir("../data")  # 切换目录
+                # 将计算结果写入文件
+                with open('Hash result.txt', 'w', encoding='utf-8') as f:   # 内容格式
+                    f.write("文件路径\t\t\tmd5\t\t\tsha1\n\n")
+                    f.close()
+                for i in range(len(self.file_list)):
+                    with open('Hash result.txt', 'a+', encoding='utf-8') as f:      # 以'a+'模式将结果追加到文件中
+                        f.write(self.file_list[i] + '\t' + res_md5_list[i] + '\t' + res_sha1_list[i] + '\n')
+                        f.close()
+                self.write_log_to_Text("计算结果已写入：" + str(os.getcwd()) + "\\" + "Hash result.txt")  # 日志记录
+                os.chdir(cur_path)
             except Exception as e:
                 self.write_log_to_Text(e)
 
