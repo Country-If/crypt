@@ -31,10 +31,27 @@ class MY_GUI(tk.Tk):
                command=self.button_calc).pack(side='right')
         Button(self, text="清空文件列表", bg="lightblue", width=10,
                command=self.button_clear).pack(side='right')
+        Button(self, text="打开文件夹", bg="lightblue", width=10,
+               command=self.open_directory).pack(side='right')
         Button(self, text="打开文件", bg="lightblue", width=10,
                command=self.open_file).pack(side='right')
         # 已读文件列表
         self.file_list = []
+
+    def open_directory(self):
+        """
+        打开文件夹
+        :return: None
+        """
+        directory = filedialog.askdirectory(title="选择文件夹", initialdir=(os.path.expanduser('D:/')))      # 默认打开D盘
+        if directory != '':
+            self.write_log_to_Text("选择文件夹：" + directory)
+            self.write_log_to_Text("读取该文件夹下所有文件")
+            for root, dirs, files in os.walk(directory):        # 遍历获取文件夹中所有文件
+                for file in files:
+                    self.file_list.append(os.path.join(root, file))
+            self.write_log_to_Text("已读文件数量：" + str(len(self.file_list)))  # 日志记录
+            self.write_log_to_Text("已读文件列表：" + str(self.file_list))
 
     def open_file(self):
         """
@@ -42,19 +59,24 @@ class MY_GUI(tk.Tk):
         :return: None
         """
         try:
-            file_list = filedialog.askopenfiles(title='选择文件', initialdir=(os.path.expanduser('D:/')))   # 读取D盘文件
-            temp_file_list = []
-            for file in file_list:      # 存放每一个文件对象
-                temp_file_list.append(file)
-            for file in temp_file_list:     # 获取文件名列表
-                file = re.compile(r"(?<=name=\').+(?=\' mode)", re.S).findall(str(file))[0]     # 正则表达式提取文件名
-                self.file_list.append(file)
-            self.write_log_to_Text("已读文件数量：" + str(len(self.file_list)))     # 日志记录
-            self.write_log_to_Text("已读文件列表：" + str(self.file_list))
-        except FileNotFoundError as e:
+            file_list = filedialog.askopenfiles(title='选择文件', initialdir=(os.path.expanduser('D:/')))  # 读取D盘文件
+            if len(file_list) != 0:
+                try:
+                    temp_file_list = []
+                    for file in file_list:      # 存放每一个文件对象
+                        temp_file_list.append(file)
+                    for file in temp_file_list:     # 获取文件名列表
+                        file = re.compile(r"(?<=name=\').+(?=\' mode)", re.S).findall(str(file))[0]     # 正则表达式提取文件名
+                        self.file_list.append(file)
+                    self.write_log_to_Text("已读文件数量：" + str(len(self.file_list)))     # 日志记录
+                    self.write_log_to_Text("已读文件列表：" + str(self.file_list))
+                except FileNotFoundError as e:
+                    self.write_log_to_Text(e)
+                except Exception as e:
+                    self.write_log_to_Text(e)
+        except Exception as e:      # 捕获无法打开的文件
             self.write_log_to_Text(e)
-        except Exception as e:
-            self.write_log_to_Text(e)
+            messagebox.showerror(title="错误", message="文件无法打开")
 
     def button_clear(self):
         """
@@ -76,12 +98,17 @@ class MY_GUI(tk.Tk):
                 res_md5_list = []
                 res_sha1_list = []
                 self.write_log_to_Text("计算Hash值(文件路径\t\t\tmd5\t\t\tsha1)")
-                for file in self.file_list:
-                    res_md5 = md5.Hash_md5(file)        # 计算该文件的md5值
-                    res_sha1 = sha1.Hash_sha1(file)     # 计算该文件的sha1值
-                    self.log_Text.insert('insert', file + '\t\t\t' + res_md5 + '\t\t\t' + res_sha1 + '\n')
-                    res_md5_list.append(res_md5)
-                    res_sha1_list.append(res_sha1)
+                file_list = self.file_list.copy()       # 创建列表副本
+                for file in file_list:
+                    try:
+                        res_md5 = md5.Hash_md5(file)        # 计算该文件的md5值
+                        res_sha1 = sha1.Hash_sha1(file)     # 计算该文件的sha1值
+                        self.log_Text.insert('insert', file + '\t\t\t' + res_md5 + '\t\t\t' + res_sha1 + '\n')
+                        res_md5_list.append(res_md5)
+                        res_sha1_list.append(res_sha1)
+                    except Exception as e:      # 捕获无法打开的文件并跳过
+                        self.file_list.remove(file)     # 删除异常元素
+                        self.write_log_to_Text(e)
                 cur_path = os.getcwd()
                 if not os.path.exists("../data"):  # 判断目录是否存在，不存在则创建
                     os.mkdir("../data")
