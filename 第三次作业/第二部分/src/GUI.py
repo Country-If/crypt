@@ -20,7 +20,7 @@ class MY_GUI(tk.Tk):
         """
         super().__init__()
         self.title("计算磁盘文件Hash值")  # 窗口名
-        self.geometry('1200x450')   # 窗口大小
+        self.geometry('800x400')   # 窗口大小
         # 标签
         Label(self, text="日志").pack(side='top')
         # 文本框
@@ -51,7 +51,7 @@ class MY_GUI(tk.Tk):
                 for file in files:
                     self.file_list.append(os.path.join(root, file))
             self.write_log_to_Text("已读文件数量：" + str(len(self.file_list)))  # 日志记录
-            self.write_log_to_Text("已读文件列表：" + str(self.file_list))
+            # self.write_log_to_Text("已读文件列表：" + str(self.file_list))
 
     def open_file(self):
         """
@@ -97,23 +97,30 @@ class MY_GUI(tk.Tk):
             try:
                 res_md5_list = []
                 res_sha1_list = []
-                self.write_log_to_Text("计算Hash值(文件路径\t\t\tmd5\t\t\tsha1)")
+                self.write_log_to_Text("开始计算Hash值")
+                # self.write_log_to_Text("计算Hash值(文件路径\t\t\tmd5\t\t\tsha1)")
+                start_time = time.clock()   # 计时开始
                 file_list = self.file_list.copy()       # 创建列表副本
                 for file in file_list:
                     try:
                         res_md5 = md5.Hash_md5(file)        # 计算该文件的md5值
                         res_sha1 = sha1.Hash_sha1(file)     # 计算该文件的sha1值
-                        self.log_Text.insert('insert', file + '\t\t\t' + res_md5 + '\t\t\t' + res_sha1 + '\n')
+                        # self.log_Text.insert('insert', file + '\t\t\t' + res_md5 + '\t\t\t' + res_sha1 + '\n')
                         res_md5_list.append(res_md5)
                         res_sha1_list.append(res_sha1)
                     except Exception as e:      # 捕获无法打开的文件并跳过
                         self.file_list.remove(file)     # 删除异常元素
                         self.write_log_to_Text(e)
+                stop_time = time.clock()    # 计时结束
+                if stop_time - start_time < 60:     # 日志记录
+                    self.write_log_to_Text("计算完成，耗时 " + str(int(stop_time - start_time)) + ' s')
+                else:
+                    self.write_log_to_Text("计算完成，耗时 " + str(int((stop_time - start_time) / 60)) + ' min')
+                # 将计算结果写入文件
                 cur_path = os.getcwd()
                 if not os.path.exists("../data"):  # 判断目录是否存在，不存在则创建
                     os.mkdir("../data")
                 os.chdir("../data")  # 切换目录
-                # 将计算结果写入文件
                 with open('Hash result.txt', 'w', encoding='utf-8') as f:   # 内容格式
                     f.write("文件路径\t\t\tmd5\t\t\tsha1\n\n")
                     f.close()
