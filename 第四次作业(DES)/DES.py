@@ -26,6 +26,27 @@ def string2bit(str_data):
     return result
 
 
+def bit2string(bit_data):
+    """
+    将位数据转换为字符串数据
+    :param bit_data: bit list
+    :return: string
+    """
+    result = []
+    pos = 0
+    c = 0
+    while pos < len(bit_data):
+        c += bit_data[pos] << (7 - (pos % 8))
+        if (pos % 8) == 7:
+            result.append(c)
+            c = 0
+        pos += 1
+
+    return ''.join([chr(c) for c in result])
+    # return bytes(result)
+
+
 if __name__ == '__main__':
     bit_res = string2bit(input("input string: "))
-    print(bit_res)
+    str_res = bit2string(bit_res)
+    print(str_res)
