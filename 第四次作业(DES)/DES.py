@@ -56,8 +56,31 @@ def permutate(table, block):
     return list(map(lambda x: block[x], table))
 
 
-def create_sub_keys():
-    pass
+def create_sub_keys(str_key):
+    """
+    创建子密钥
+    :param str_key: string
+    :return: list of sub_key lists
+    """
+    key = permutate(pc1, string2bit(str_key))
+    i = 0
+    # 切分密钥
+    L = key[:28]
+    R = key[28:]
+    Kn = [[0] * 48] * 16
+    while i < 16:
+        j = 0
+        # 根据左移次数列表 循环左移
+        while j < left_rotations[i]:
+            L.append(L[0])
+            del L[0]
+            R.append(R[0])
+            del R[0]
+            j += 1
+        # 通过pc2 创建子密钥
+        Kn[i] = permutate(pc2, L + R)
+        i += 1
+    return Kn
 
 
 # Permutation and translation tables for DES
@@ -166,7 +189,8 @@ if __name__ == '__main__':
     # bit_res = string2bit(input("input string: "))
     # str_res = bit2string(bit_res)
     # print(str_res)
-    num_list = list(range(32))
-    print(num_list)
-    per_res = permutate(expansion_table, num_list)
-    print(per_res)
+    # num_list = list(range(32))
+    # print(num_list)
+    # per_res = permutate(expansion_table, num_list)
+    # print(per_res)
+    print(create_sub_keys(input("input key: ")))
