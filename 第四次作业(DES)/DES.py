@@ -46,6 +46,20 @@ def bit2string(bit_data):
     # return bytes(result)
 
 
+def permutate(table, block):
+    """
+    根据指定顺序置换数据
+    :param table: permutate list
+    :param block: bit list
+    :return: list
+    """
+    return list(map(lambda x: block[x], table))
+
+
+def create_sub_keys():
+    pass
+
+
 # Permutation and translation tables for DES
 pc1 = [56, 48, 40, 32, 24, 16, 8,
        0, 57, 49, 41, 33, 25, 17,
@@ -149,6 +163,10 @@ S_box = [
 ]
 
 if __name__ == '__main__':
-    bit_res = string2bit(input("input string: "))
-    str_res = bit2string(bit_res)
-    print(str_res)
+    # bit_res = string2bit(input("input string: "))
+    # str_res = bit2string(bit_res)
+    # print(str_res)
+    num_list = list(range(32))
+    print(num_list)
+    per_res = permutate(expansion_table, num_list)
+    print(per_res)
