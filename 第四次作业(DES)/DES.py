@@ -62,6 +62,7 @@ def create_sub_keys(str_key):
     :param str_key: string
     :return: list of sub_key lists
     """
+    # 初始置换
     key = permutate(pc1, string2bit(str_key))
     i = 0
     # 切分密钥
@@ -83,7 +84,84 @@ def create_sub_keys(str_key):
     return Kn
 
 
-# Permutation and translation tables for DES
+# Type of crypting being done
+ENCRYPT = 0x00
+DECRYPT = 0x01
+
+
+def des_crypt(block, Kn, crypt_type):
+    """
+    DES核心算法
+    :param block: bit list
+    :param Kn: sub keys
+    :param crypt_type: ENCRYPT / DECRYPT
+    :return: bit list
+    """
+    # 初始置换
+    block = permutate(ip, block)
+    L = block[:32]
+    R = block[32:]
+
+    # 加密从Kn[1]到Kn[16] (下标从0开始)
+    if crypt_type == ENCRYPT:
+        iteration = 0
+        iteration_adjustment = 1
+    # 解密从Kn[16]到Kn[1]
+    else:
+        iteration = 15
+        iteration_adjustment = -1
+
+    i = 0
+    while i < 16:
+        # 复制R[i-1]，将会变成L[i]
+        tempR = R[:]
+
+        # 选择运算E
+        R = permutate(expansion_table, R)
+
+        # 中间结果与子密钥相异或，切分为8块
+        R = list(map(lambda x, y: x ^ y, R, Kn[iteration]))
+        B = [R[:6], R[6:12], R[12:18], R[18:24],
+             R[24:30], R[30:36], R[36:42], R[42:]]
+
+        # 代替函数组S
+        j = 0
+        Bn = [0] * 32
+        pos = 0
+        while j < 8:
+            # 计算偏移量
+            m = (B[j][0] << 1) + B[j][5]    # 行号
+            n = (B[j][1] << 3) + (B[j][2] << 2) + (B[j][3] << 1) + B[j][4]    # 列号
+
+            # 求排列值(S盒的输出值)
+            v = S_box[j][(m << 4) + n]
+
+            # 将值转换为位，写入Bn
+            Bn[pos] = (v & 8) >> 3
+            Bn[pos + 1] = (v & 4) >> 2
+            Bn[pos + 2] = (v & 2) >> 1
+            Bn[pos + 3] = v & 1
+
+            pos += 4
+            j += 1
+
+        # 置换运算P
+        R = permutate(p, Bn)
+
+        R = list(map(lambda x, y: x ^ y, R, L))
+
+        # L[i] = R[i - 1]
+        L = tempR
+
+        i += 1
+        iteration += iteration_adjustment
+
+    # 逆初始置换IP^-1 (R在左 L在右)
+    final = permutate(fp, R + L)
+    return final
+
+
+# Permutation and translation tables for DES (8 * 7)
 pc1 = [56, 48, 40, 32, 24, 16, 8,
        0, 57, 49, 41, 33, 25, 17,
        9, 1, 58, 50, 42, 34, 26,
@@ -94,12 +172,12 @@ pc1 = [56, 48, 40, 32, 24, 16, 8,
        20, 12, 4, 27, 19, 11, 3
        ]
 
-# number left rotations of pc1
+# number left rotations of pc1 (1 * 16)
 left_rotations = [
     1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1
 ]
 
-# permuted choice key (table 2)
+# permuted choice key (table 2) (8 * 6)
 pc2 = [
     13, 16, 10, 23, 0, 4,
     2, 27, 14, 5, 20, 9,
@@ -111,7 +189,7 @@ pc2 = [
     45, 41, 49, 35, 28, 31
 ]
 
-# initial permutation IP
+# initial permutation IP (8 * 8)
 ip = [57, 49, 41, 33, 25, 17, 9, 1,
       59, 51, 43, 35, 27, 19, 11, 3,
       61, 53, 45, 37, 29, 21, 13, 5,
@@ -122,7 +200,7 @@ ip = [57, 49, 41, 33, 25, 17, 9, 1,
       62, 54, 46, 38, 30, 22, 14, 6
       ]
 
-# Expansion table for turning 32 bit blocks into 48 bits
+# Expansion table for turning 32 bit blocks into 48 bits (8 * 6)
 expansion_table = [
     31, 0, 1, 2, 3, 4,
     3, 4, 5, 6, 7, 8,
@@ -134,7 +212,7 @@ expansion_table = [
     27, 28, 29, 30, 31, 0
 ]
 
-# The (in)famous S-boxes
+# The (in)famous S-boxes [(4 * 16) * 8]
 S_box = [
     # S1
     [14, 4, 13, 1, 2, 15, 11, 8, 3, 10, 6, 12, 5, 9, 0, 7,
@@ -185,6 +263,28 @@ S_box = [
      2, 1, 14, 7, 4, 10, 8, 13, 15, 12, 9, 0, 3, 5, 6, 11],
 ]
 
+# 32-bit permutation function P used on the output of the S-boxes (6 * 6)
+p = [
+    15, 6, 19, 20, 28, 11,
+    27, 16, 0, 14, 22, 25,
+    4, 17, 30, 9, 1, 7,
+    23, 13, 31, 26, 2, 8,
+    18, 12, 29, 5, 21, 10,
+    3, 24
+]
+
+# final permutation IP^-1 (8 * 8)
+fp = [
+    39, 7, 47, 15, 55, 23, 63, 31,
+    38, 6, 46, 14, 54, 22, 62, 30,
+    37, 5, 45, 13, 53, 21, 61, 29,
+    36, 4, 44, 12, 52, 20, 60, 28,
+    35, 3, 43, 11, 51, 19, 59, 27,
+    34, 2, 42, 10, 50, 18, 58, 26,
+    33, 1, 41, 9, 49, 17, 57, 25,
+    32, 0, 40, 8, 48, 16, 56, 24
+]
+
 if __name__ == '__main__':
     # bit_res = string2bit(input("input string: "))
     # str_res = bit2string(bit_res)
@@ -193,4 +293,11 @@ if __name__ == '__main__':
     # print(num_list)
     # per_res = permutate(expansion_table, num_list)
     # print(per_res)
-    print(create_sub_keys(input("input key: ")))
+    Kns = create_sub_keys(input("input key: "))
+    input_data = string2bit(input("input data: "))
+    print(input_data)
+    crypt_res = des_crypt(input_data, Kns, ENCRYPT)
+    print(crypt_res)
+    print(bit2string(crypt_res))
+    decrypt_res = des_crypt(crypt_res, Kns, DECRYPT)
+    print(bit2string(decrypt_res))
