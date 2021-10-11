@@ -3,6 +3,12 @@
 
 __author__ = "Maylon"
 
+# macro definition
+ENCRYPT = 0x00
+DECRYPT = 0x01
+block_size = 64
+key_size = 64
+
 
 def string2bit(str_data):
     """
@@ -84,13 +90,6 @@ def create_sub_keys(key):
     return Kn
 
 
-# macro definition
-ENCRYPT = 0x00
-DECRYPT = 0x01
-block_size = 64
-key_size = 64
-
-
 def des_crypt(block, Kn, crypt_type):
     """
     DES核心算法
@@ -132,8 +131,8 @@ def des_crypt(block, Kn, crypt_type):
         pos = 0
         while j < 8:
             # 计算偏移量
-            m = (B[j][0] << 1) + B[j][5]    # 行号
-            n = (B[j][1] << 3) + (B[j][2] << 2) + (B[j][3] << 1) + B[j][4]    # 列号
+            m = (B[j][0] << 1) + B[j][5]  # 行号
+            n = (B[j][1] << 3) + (B[j][2] << 2) + (B[j][3] << 1) + B[j][4]  # 列号
 
             # 求排列值(S盒的输出值)
             v = S_box[j][(m << 4) + n]
@@ -173,8 +172,31 @@ def check_key(key):
     key_len = len(key)
     if key_len % key_size != 0:
         for i in range(key_size - (key_len % key_size)):
-            key.append(0)   # 不够位数补0
+            key.append(0)  # 不够位数补0
     return key
+
+
+def check_data(data):
+    """
+    检查数据是否符合规范
+    :param data: string
+    :return: list of block lists
+    """
+    data = string2bit(data)
+    data_len = len(data)
+
+    if data_len % block_size != 0:
+        for i in range(block_size - (data_len % block_size)):
+            data.append(0)  # 不够位数补0
+
+    data_len = len(data)
+    res = []
+    i = 0
+    # 将数据切块
+    while i < data_len - 1:
+        res.append(data[i: i + block_size])
+        i += block_size
+    return res
 
 
 # Permutation and translation tables for DES (8 * 7)
@@ -312,10 +334,10 @@ if __name__ == '__main__':
 
     input_key = check_key(input("input key: "))
     Kns = create_sub_keys(input_key)
-    input_data = string2bit(input("input data: "))
-    print(input_data)
-    crypt_res = des_crypt(input_data, Kns, ENCRYPT)
-    print(crypt_res)
-    print(bit2string(crypt_res))
-    decrypt_res = des_crypt(crypt_res, Kns, DECRYPT)
-    print(bit2string(decrypt_res))
+    input_data_list = check_data(input("input data: "))
+    for input_data in input_data_list:
+        crypt_res = des_crypt(input_data, Kns, ENCRYPT)
+        print(crypt_res)
+        print(bit2string(crypt_res))
+        decrypt_res = des_crypt(crypt_res, Kns, DECRYPT)
+        print(bit2string(decrypt_res))
