@@ -199,6 +199,35 @@ def check_data(data):
     return res
 
 
+def encrypt(data, key):
+    """
+    加密功能
+    :param data: string
+    :param key: string
+    :return: list of bit lists
+    """
+    data_list = check_data(data)
+    Kn = create_sub_keys(check_key(key))
+    res = []
+    for data in data_list:  # 逐块加密
+        res.append(des_crypt(data, Kn, ENCRYPT))
+    return res
+
+
+def decrypt(block_list, key):
+    """
+    解密功能
+    :param block_list: list of bit lists
+    :param key: string
+    :return: list of bit lists
+    """
+    Kn = create_sub_keys(check_key(key))
+    res = []
+    for block in block_list:    # 逐块解密
+        res.append(des_crypt(block, Kn, DECRYPT))
+    return res
+
+
 # Permutation and translation tables for DES (8 * 7)
 pc1 = [56, 48, 40, 32, 24, 16, 8,
        0, 57, 49, 41, 33, 25, 17,
@@ -324,20 +353,14 @@ fp = [
 ]
 
 if __name__ == '__main__':
-    # bit_res = string2bit(input("input string: "))
-    # str_res = bit2string(bit_res)
-    # print(str_res)
-    # num_list = list(range(32))
-    # print(num_list)
-    # per_res = permutate(expansion_table, num_list)
-    # print(per_res)
 
-    input_key = check_key(input("input key: "))
-    Kns = create_sub_keys(input_key)
-    input_data_list = check_data(input("input data: "))
-    for input_data in input_data_list:
-        crypt_res = des_crypt(input_data, Kns, ENCRYPT)
-        print(crypt_res)
-        print(bit2string(crypt_res))
-        decrypt_res = des_crypt(crypt_res, Kns, DECRYPT)
-        print(bit2string(decrypt_res))
+    input_key = input('input key: ')
+    input_data = input('input data: ')
+    print("input data: ")
+    print(check_data(input_data))
+    encrypt_result = encrypt(input_data, input_key)
+    print("encrypt result: ")
+    print(encrypt_result)
+    decrypt_result = decrypt(encrypt_result, input_key)
+    print("decrypt result: ")
+    print(decrypt_result)
