@@ -56,14 +56,14 @@ def permutate(table, block):
     return list(map(lambda x: block[x], table))
 
 
-def create_sub_keys(str_key):
+def create_sub_keys(key):
     """
     创建子密钥
-    :param str_key: string
+    :param key: bit list
     :return: list of sub_key lists
     """
     # 初始置换
-    key = permutate(pc1, string2bit(str_key))
+    key = permutate(pc1, key)
     i = 0
     # 切分密钥
     L = key[:28]
@@ -84,9 +84,11 @@ def create_sub_keys(str_key):
     return Kn
 
 
-# Type of crypting being done
+# macro definition
 ENCRYPT = 0x00
 DECRYPT = 0x01
+block_size = 64
+key_size = 64
 
 
 def des_crypt(block, Kn, crypt_type):
@@ -159,6 +161,20 @@ def des_crypt(block, Kn, crypt_type):
     # 逆初始置换IP^-1 (R在左 L在右)
     final = permutate(fp, R + L)
     return final
+
+
+def check_key(key):
+    """
+    检查密钥是否符合规范
+    :param key: string
+    :return: bit list
+    """
+    key = string2bit(key)
+    key_len = len(key)
+    if key_len % key_size != 0:
+        for i in range(key_size - (key_len % key_size)):
+            key.append(0)   # 不够位数补0
+    return key
 
 
 # Permutation and translation tables for DES (8 * 7)
@@ -293,7 +309,9 @@ if __name__ == '__main__':
     # print(num_list)
     # per_res = permutate(expansion_table, num_list)
     # print(per_res)
-    Kns = create_sub_keys(input("input key: "))
+
+    input_key = check_key(input("input key: "))
+    Kns = create_sub_keys(input_key)
     input_data = string2bit(input("input data: "))
     print(input_data)
     crypt_res = des_crypt(input_data, Kns, ENCRYPT)
