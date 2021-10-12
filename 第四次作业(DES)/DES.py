@@ -13,6 +13,7 @@ _key_size = 64
 def string2bit(str_data):
     """
     将字符串数据转换为比特位列表
+
     :param str_data: string
     :return: list of bits (0,1)'s
     """
@@ -35,6 +36,7 @@ def string2bit(str_data):
 def bit2string(bit_data):
     """
     将位数据转换为字符串数据
+
     :param bit_data: bit list
     :return: string
     """
@@ -49,12 +51,12 @@ def bit2string(bit_data):
         pos += 1
 
     return ''.join([chr(c) for c in result])
-    # return bytes(result)
 
 
 def _permutate(table, block):
     """
     根据指定顺序置换数据
+
     :param table: permutate list
     :param block: bit list
     :return: list
@@ -65,6 +67,7 @@ def _permutate(table, block):
 def _create_sub_keys(key):
     """
     创建子密钥
+
     :param key: bit list
     :return: list of sub_key lists
     """
@@ -93,6 +96,7 @@ def _create_sub_keys(key):
 def des_crypt(block, Kn, crypt_type):
     """
     DES核心算法
+
     :param block: bit list
     :param Kn: sub keys
     :param crypt_type: ENCRYPT / DECRYPT
@@ -165,6 +169,7 @@ def des_crypt(block, Kn, crypt_type):
 def _check_key(key):
     """
     检查密钥是否符合规范
+
     :param key: string
     :return: bit list
     """
@@ -179,6 +184,7 @@ def _check_key(key):
 def _check_data(data):
     """
     检查数据是否符合规范
+
     :param data: string
     :return: list of block lists
     """
@@ -202,6 +208,7 @@ def _check_data(data):
 def encrypt(data, key):
     """
     加密功能
+
     :param data: string
     :param key: string
     :return: list of bit lists
@@ -217,6 +224,7 @@ def encrypt(data, key):
 def decrypt(block_list, key):
     """
     解密功能
+
     :param block_list: list of bit lists
     :param key: string
     :return: list of bit lists
