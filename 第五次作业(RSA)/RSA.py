@@ -3,26 +3,50 @@
 
 __author__ = "Maylon"
 
-
 import math
 
 
 def is_prime(n):
     """
-    穷举法判断整数n是否是素数
+    试除法判断整数n是否是素数
 
-    :param n: 整数n
-    :return: 是素数返回True，否则返回False
+    :param n: int
+    :return: bool：是素数返回True，否则返回False
     """
-    i = 2   # 从2开始穷举
-    while i <= math.sqrt(n):    # 穷举到sqrt(n)
+    i = 2  # 从2开始穷举
+    while i <= math.sqrt(n):  # 穷举到sqrt(n)
         if n % i == 0:  # 是素数
             return False
         i += 1
     return True
 
 
+def gcd(a, b):
+    """
+    计算两个数的最大公约数
+
+    :param a: int
+    :param b: int
+    :return: int
+    """
+    # a = q * b + r
+    while True:
+        r = a % b  # Calculate the remainder
+        if r == 0:
+            break
+        # Change the value of a and b
+        a = b
+        b = r
+    return b
+
+
 if __name__ == '__main__':
-    for i in range(100):
-        if is_prime(i):
-            print(i)
+    import random
+
+    for i in range(10):
+        a = random.randint(1, 50)
+        b = random.randint(1, 50)
+        print(a)
+        print(b)
+        print(gcd(a, b))
+        print()
