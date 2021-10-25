@@ -91,8 +91,8 @@ def ExpMod(a, b, n):
     for i in range(len(b) - 1):
         a = a * a
         L.append(a)
+    L.reverse()  # 列表反转，与二进制位对应
     # 对二进制值中为1的项相乘并模n
-    L.reverse()     # 列表反转，与二进制位对应
     res = 1
     for i in range(len(b)):
         if b[i] == '1':
@@ -103,15 +103,4 @@ def ExpMod(a, b, n):
 
 
 if __name__ == '__main__':
-    import random
-
-    for _ in range(10):
-        a = random.randint(1, 50)
-        b = random.randint(10, 30)
-        n = random.randint(10000, 10000000)
-        print(a)
-        print(b)
-        print(n)
-        print(pow(a, b) % n)
-        print(ExpMod(a, b, n))
-        print()
+    pass
