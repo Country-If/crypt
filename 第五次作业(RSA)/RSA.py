@@ -21,9 +21,9 @@ def is_prime(n):
     return True
 
 
-def gcd(a, b):
+def gcd_iteration(a, b):
     """
-    计算两个数的最大公约数
+    迭代法计算两个数的最大公约数
 
     :param a: int
     :param b: int
@@ -40,6 +40,20 @@ def gcd(a, b):
     return b
 
 
+def gcd_recursion(a, b):
+    """
+    递归法计算两个数的最大公约数
+
+    :param a: int
+    :param b: int
+    :return: int
+    """
+    if b == 0:
+        return a
+    else:
+        return gcd_recursion(b, a % b)
+
+
 if __name__ == '__main__':
     import random
 
@@ -48,5 +62,5 @@ if __name__ == '__main__':
         b = random.randint(1, 50)
         print(a)
         print(b)
-        print(gcd(a, b))
+        print(gcd_recursion(a, b))
         print()
