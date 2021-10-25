@@ -23,18 +23,17 @@ def is_prime(n):
 
 def is_prime_probability_test(n):
     """素数的概率性检验算法"""
-    pass    # 占坑，有时间补，教材P221
+    pass  # 占坑，有时间补，教材P221
 
 
 def gcd_iteration(a, b):
     """
-    迭代法计算两个数的最大公约数
+    迭代法计算两个数的最大公约数: a = q * b + r
 
     :param a: int
     :param b: int
     :return: int
     """
-    # a = q * b + r
     while True:
         r = a % b  # Calculate the remainder
         if r == 0:
@@ -47,7 +46,7 @@ def gcd_iteration(a, b):
 
 def gcd_recursion(a, b):
     """
-    递归法计算两个数的最大公约数
+    递归法计算两个数的最大公约数: a = q * b + r
 
     :param a: int
     :param b: int
@@ -61,7 +60,7 @@ def gcd_recursion(a, b):
 
 def InvMod(a, b):
     """
-    递归实现扩展欧几里得算法 ed = 1 (mod n)
+    递归实现扩展欧几里得算法: ed = 1 (mod n)
 
     :param a: e
     :param b: n
@@ -77,13 +76,42 @@ def InvMod(a, b):
         return gcd, x, y
 
 
+def ExpMod(a, b, n):
+    """
+    模指运算: a^b (mod n)
+
+    :param a: int
+    :param b: int
+    :param n: int
+    :return: int
+    """
+    b = bin(b)[2:]  # 获取二进制，去掉开头的'0b'
+    # 快速平方乘算法得到列表
+    L = [a]
+    for i in range(len(b) - 1):
+        a = a * a
+        L.append(a)
+    # 对二进制值中为1的项相乘并模n
+    L.reverse()     # 列表反转，与二进制位对应
+    res = 1
+    for i in range(len(b)):
+        if b[i] == '1':
+            # 边乘边模
+            res *= L[i]
+            res %= n
+    return res
+
+
 if __name__ == '__main__':
     import random
 
-    for i in range(10):
+    for _ in range(10):
         a = random.randint(1, 50)
-        b = random.randint(1, 50)
+        b = random.randint(10, 30)
+        n = random.randint(10000, 10000000)
         print(a)
         print(b)
-        print(InvMod(a, b))
+        print(n)
+        print(pow(a, b) % n)
+        print(ExpMod(a, b, n))
         print()
