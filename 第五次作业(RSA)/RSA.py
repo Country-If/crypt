@@ -21,6 +21,11 @@ def is_prime(n):
     return True
 
 
+def is_prime_probability_test(n):
+    """素数的概率性检验算法"""
+    pass    # 占坑，有时间补，教材P221
+
+
 def gcd_iteration(a, b):
     """
     迭代法计算两个数的最大公约数
@@ -54,6 +59,24 @@ def gcd_recursion(a, b):
         return gcd_recursion(b, a % b)
 
 
+def InvMod(a, b):
+    """
+    递归实现扩展欧几里得算法 ed = 1 (mod n)
+
+    :param a: e
+    :param b: n
+    :return: gcd, x, y (x即是e^-1，也就是d)
+    """
+    if b == 0:
+        return a, 1, 0
+    else:
+        gcd, x, y = InvMod(b, a % b)
+        t = x
+        x = y
+        y = t - a // b * y
+        return gcd, x, y
+
+
 if __name__ == '__main__':
     import random
 
@@ -62,5 +85,5 @@ if __name__ == '__main__':
         b = random.randint(1, 50)
         print(a)
         print(b)
-        print(gcd_recursion(a, b))
+        print(InvMod(a, b))
         print()
