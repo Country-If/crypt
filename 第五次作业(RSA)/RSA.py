@@ -6,7 +6,7 @@ __author__ = "Maylon"
 from BaseFunction import *
 import random
 
-min_size = 10
+min_size = 5
 
 
 def _generate_p_q(n_bit):
@@ -43,15 +43,16 @@ def get_prime(n):
     return n
 
 
-class RSA_Key:
+class RSA:
 
     def __init__(self, n_bit):
         self.n_bit = n_bit
         self.__p, self.__q = _generate_p_q(self.n_bit)
         self.n = self.__p * self.__q
         self.__phi_n = (self.__p - 1) * (self.__q - 1)
-        self.e = get_prime(random.randint(2, int(str(self.__phi_n)[: len(str(self.__phi_n)) // 2])))  # 随机取e，且(e, phi_n)=1
-        self.__d = InvMod(self.e, self.__phi_n)[1]
+        # 随机选取e，满足1<e<phi_n，且(e, phi_n)=1
+        self.e = get_prime(random.randint(2, int(str(self.__phi_n)[: len(str(self.__phi_n)) // 2])))
+        self.__d = InvMod(self.e, self.__phi_n)[1] % self.__phi_n
 
     def PublicKey(self):
         """
@@ -69,10 +70,44 @@ class RSA_Key:
         """
         return self.__p, self.__q, self.__d, self.__phi_n
 
+    def __crypt(self, a, b):
+        """
+        加密形如：y = a^b (mod n)
+
+        :param a: int
+        :param b: int
+        :return: int
+        """
+        return ExpMod(a, b, self.n)
+
+    def encrypt(self, M):
+        """
+        加密运算：C = M^e (mod n)
+
+        :param M: int
+        :return: int
+        """
+        return self.__crypt(M, self.e)
+
+    def decrypt(self, C):
+        """
+        解密运算：M = C^d (mod n)
+
+        :param C: int
+        :return: int
+        """
+        return self.__crypt(C, self.__d)
+
 
 if __name__ == '__main__':
     # print(generate_p_q(int(input("input bit num: "))))
 
-    rsa_key = RSA_Key(int(input("input bit num: ")))
-    print(rsa_key.PublicKey())
-    print(rsa_key.PrivateKey())
+    rsa = RSA(int(input("input bit num: ")))
+    print("(e, n)=" + str(rsa.PublicKey()))
+    print("(p, q, d, phi_n)=" + str(rsa.PrivateKey()))
+
+    m = int(input("input M: "))
+    c = rsa.encrypt(m)
+    print("encrypted data: " + str(c))
+    m = rsa.decrypt(c)
+    print("decrypted data: " + str(m))
