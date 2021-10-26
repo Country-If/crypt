@@ -102,5 +102,38 @@ def ExpMod(a, b, n):
     return res
 
 
+def factor(num):
+    """
+    Calculates the lowest prime factor by default
+
+    :param num: int
+    :return: int
+    """
+    if num == 2 or num % 2 == 0:
+        return 2
+    else:
+        for i in range(3, int(math.sqrt(num)) + 1, 2):  # I could iterate over a list of primes
+            if num % i == 0:  # But creating that list of primes turns out even more intensive task
+                return i
+        else:
+            return num
+
+
+def prime_check(num):
+    """
+    判断是否是素数，参考Python第三方库primePy
+
+    :param num: int
+    :return: bool
+    """
+    # from primePy import primes
+    # primes.check()
+
+    if factor(num) == num:
+        return True
+    else:
+        return False
+
+
 if __name__ == '__main__':
     pass
