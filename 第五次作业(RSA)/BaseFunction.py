@@ -4,6 +4,9 @@
 __author__ = "Maylon"
 
 import math
+import random
+
+min_size = 5  # 二进制位数最小值
 
 
 def is_prime(n):
@@ -133,6 +136,73 @@ def prime_check(num):
         return True
     else:
         return False
+
+
+def generate_p_q(n_bit):
+    """
+    随机生成二进制位数为n的大素数p、q
+
+    :param n_bit: int，整数对应的二进制位数
+    :return: (p, q)
+    """
+    # 随机生成n位二进制所对应的十进制整数
+    if n_bit <= min_size:
+        raise ValueError("n太小了，n必须大于" + str(min_size) + "，n值建议小于50")
+    randint_list = ['1'] * n_bit  # 初始化长度为n的列表
+    # 随机更改数据的位置
+    pos_list = random.sample(range(1, n_bit), random.randint(min_size, n_bit) - 1)
+    for pos in pos_list:
+        randint_list[pos] = '0'
+    randint_str = ''.join(randint_list)  # 列表转字符串
+    randint = int(randint_str, 2)  # 十进制值
+    # 获取p, q
+    while not prime_check(randint):
+        randint += 1
+    p = randint
+    randint += random.randint(min_size, n_bit)  # 加上随机数得到新的随机整数
+    while not prime_check(randint):
+        randint += 1
+    q = randint
+    return p, q
+
+
+def generate_prime(n_digit):
+    """
+    随机生成n位的素数
+
+    :param n_digit: int，素数位数
+    :return: int，n位素数
+    """
+    if n_digit < 1:
+        raise ValueError("素数位数不能小于1")
+    rand_list = random.sample([str(i) for i in range(1, 10)], 9)  # 初始化1-9的不重复列表，防止生成类似999的整数，影响后续操作
+    randint_list = rand_list[: n_digit]
+    if n_digit > 9:  # 超过位数则补齐
+        while len(randint_list) < n_digit:
+            randint_list.append(str(random.randint(0, 9)))
+    randint = int("".join(randint_list))  # 转为整数
+    while not prime_check(randint):  # 得到素数
+        randint += 1
+    return randint
+
+
+def generate_p_g(n_digit):
+    """
+    生成大素数p及其本原元g
+
+    :param n_digit: int，素数位数
+    :return: (p, q), (int, int)
+    """
+    while True:
+        q = generate_prime(n_digit)  # 随机生成一个n位的素数q
+        if prime_check(2 * q + 1):  # 判断 2*q+1 是否为素数
+            p = 2 * q + 1
+            break
+    while True:
+        g = random.randint(2, p - 2)  # 随机选取整数g，g范围：(1, p - 1)
+        if ExpMod(g, 2, p) != 1 and pow(g, q, p) != 1:  # 左边用了自己写的模指运算函数，右边用Python自带函数速度快一点
+            break
+    return p, g
 
 
 if __name__ == '__main__':
