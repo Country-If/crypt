@@ -50,6 +50,9 @@ class EIGamal:
     def __init__(self, n_digit):
         self.p, self.g = generate_p_g(n_digit)
 
+    def get_p_g(self):
+        return self.p, self.g
+
     def generate_key(self):
         """
         生成双方的公钥和私钥
@@ -78,14 +81,32 @@ class EIGamal:
         C2 = (U * M) % self.p  # 加密后的内容
         return C1, C2  # 发送的密文
 
-    def decrypt(self, private_key, public_key, C):
-        pass
+    def decrypt(self, private_key, C):
+        """
+        解密算法
+
+        :param private_key: int，自己的私钥
+        :param C: (int, int)，密文(C1, C2)
+        :return: int，明文
+        """
+        C1 = C[0]
+        C2 = C[1]
+        V = ExpMod(C1, private_key, self.p)
+        V_inverse = InvMod(V, self.p)[1]
+        M = (C2 * V_inverse) % self.p
+        return M
 
 
 if __name__ == '__main__':
-    n = int(input("input n: "))
-    # print(generate_p_g(n))
+    n = int(input("input prime digits num: "))  # 生成大素数p的位数
     eigamal = EIGamal(n)
-    a_private, a_public, b_private, b_public = eigamal.generate_key()
-    m = int(input("input data: "))
-    print(eigamal.encrypt(a_private, b_public, m))
+    a_private, a_public, b_private, b_public = eigamal.generate_key()  # 获取双方公钥和私钥
+    m = int(input("input data to be encrypted: "))  # 加密数据
+    A_encrypted_data = eigamal.encrypt(a_private, b_public, m)  # A加密，用A的私钥和B的公钥
+    print("A encrypted result: " + str(A_encrypted_data))
+    B_decrypted_data = eigamal.decrypt(b_private, A_encrypted_data)  # B解密，用B的私钥和A的密文
+    print("B decrypted result: " + str(B_decrypted_data))
+    B_encrypted_data = eigamal.encrypt(b_private, a_public, m)  # B加密，用B的私钥和A的公钥
+    print("B encrypted result: " + str(B_encrypted_data))
+    A_decrypted_data = eigamal.decrypt(a_private, B_encrypted_data)  # A解密，用A的私钥和B的密文
+    print("A decrypted result: " + str(A_decrypted_data))
