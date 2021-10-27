@@ -78,7 +78,8 @@ class RSA:
         :param b: int
         :return: int
         """
-        return ExpMod(a, b, self.n)
+        # return pow(a, b, self.n)  # 用pow()函数会快很多，官方库也是用的pow()
+        return ExpMod(a, b, self.n)  # 但是作业要求是用自己写的算法...
 
     def encrypt(self, M):
         """
