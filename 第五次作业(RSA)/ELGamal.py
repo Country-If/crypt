@@ -41,7 +41,7 @@ def generate_p_g(n_digit):
             break
     while True:
         g = random.randint(2, p - 2)  # 随机选取整数g，g范围：(1, p - 1)
-        if ExpMod(g, 2, p) != 1 and ExpMod(g, q, p) != 1:
+        if ExpMod(g, 2, p) != 1 and pow(g, q, p) != 1:  # 左边用了自己写的模指运算函数，右边用Python自带函数速度快一点
             break
     return p, g
 
