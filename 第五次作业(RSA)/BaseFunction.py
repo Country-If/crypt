@@ -62,9 +62,9 @@ def InvMod(a, b):
     """
     递归实现扩展欧几里得算法: ed = 1 (mod n)
 
-    :param a: e
-    :param b: n
-    :return: gcd, x, y (x即是e^-1，也就是d)
+    :param a: e(int)
+    :param b: n(int)
+    :return: gcd, x, y (x即是e^-1，也就是d)(int, int, int)
     """
     if b == 0:
         return a, 1, 0
@@ -124,7 +124,7 @@ def prime_check(num):
     判断是否是素数，参考Python第三方库primePy
 
     :param num: int
-    :return: bool
+    :return: bool: 是素数返回True，否则返回False
     """
     # from primePy import primes
     # primes.check()
