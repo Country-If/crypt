@@ -36,7 +36,7 @@ class EIGamal:
         :param M: int，原始数据
         :return: (int, int)，密文(C1, C2)
         """
-        U = ExpMod(public_key, private_key, self.p)  # 由对方的公钥生成
+        U = ExpMod(public_key, private_key, self.p)  # 由对方的公钥生成密钥
         C1 = ExpMod(self.g, private_key, self.p)  # 由自己的私钥生成公钥
         C2 = (U * M) % self.p  # 加密后的内容
         return C1, C2  # 发送的密文
@@ -61,6 +61,10 @@ if __name__ == '__main__':
     n = int(input("input prime digits num: "))  # 生成大素数p的位数
     eigamal = EIGamal(n)
     a_private, a_public, b_private, b_public = eigamal.generate_key()  # 获取双方公钥和私钥
+    print("A private key: " + str(a_private))
+    print("A public key: " + str(a_public))
+    print("B private key: " + str(b_private))
+    print("B public key: " + str(b_public))
     m = int(input("input data to be encrypted: "))  # 加密数据
     A_encrypted_data = eigamal.encrypt(a_private, b_public, m)  # A加密，用A的私钥和B的公钥
     print("A encrypted result: " + str(A_encrypted_data))
