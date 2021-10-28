@@ -105,7 +105,7 @@ def ExpMod(a, b, n):
     return res
 
 
-def factor(num):
+def _factor(num):
     """
     Calculates the lowest prime factor by default
 
@@ -132,7 +132,7 @@ def prime_check(num):
     # from primePy import primes
     # primes.check()
 
-    if factor(num) == num:
+    if _factor(num) == num:
         return True
     else:
         return False
