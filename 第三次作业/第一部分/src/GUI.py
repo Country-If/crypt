@@ -171,7 +171,7 @@ class MY_GUI(tk.Tk):
                 with open('encrypt.txt', 'r', encoding='utf-8') as f:  # 读取加密文件内容
                     encrypt_data = f.read()
                     f.close()
-                result = xor.decrypt(encrypt_data, self.key_words)  # 加密文件
+                result = xor.decrypt(encrypt_data, self.key_words)  # 解密文件
                 self.preview_Text.delete('1.0', 'end')  # 清空文本框
                 self.preview_Text.insert('insert', result)  # 预览结果
                 with open('decrypt.txt', 'w', encoding='utf-8') as f:
