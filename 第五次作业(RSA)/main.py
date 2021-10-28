@@ -10,16 +10,18 @@ from DH import *
 
 
 def menu():
-    choice = int(input("0.退出\t1.RSA\t2.EIGamal\t3.DH\n"))
-    if choice == 0:
+    choice = input("0.退出\t1.RSA\t2.EIGamal\t3.DH\n")
+    if choice == '0':
         sys.exit(0)
-    elif choice == 1:
+    elif choice == '1':
         try:
             rsa = RSA(int(input("input bit num: ")))
             print("(e, n)=" + str(rsa.PublicKey()))
             print("(p, q, d, phi_n)=" + str(rsa.PrivateKey()))
-
+            n = rsa.PublicKey()[1]
             m = int(input("input M: "))
+            if m >= n:
+                raise ValueError("Error: m must less than n")
             c = rsa.encrypt(m)
             print("encrypted data: " + str(c))
             m = rsa.decrypt(c)
@@ -27,7 +29,7 @@ def menu():
         except Exception as e:
             print("Error: " + str(e))
         menu()
-    elif choice == 2:
+    elif choice == '2':
         try:
             n = int(input("input prime digits num: "))  # 生成大素数p的位数
             eigamal = EIGamal(n)
@@ -48,7 +50,7 @@ def menu():
         except Exception as e:
             print("Error: " + str(e))
         menu()
-    elif choice == 3:
+    elif choice == '3':
         try:
             n = int(input("input prime digits num: "))  # 生成大素数p的位数
             dh = DH(n)

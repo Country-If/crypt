@@ -77,12 +77,13 @@ class RSA:
 
 if __name__ == '__main__':
     # print(generate_p_q(int(input("input bit num: "))))
-
     rsa = RSA(int(input("input bit num: ")))
     print("(e, n)=" + str(rsa.PublicKey()))
     print("(p, q, d, phi_n)=" + str(rsa.PrivateKey()))
-
+    n = rsa.PublicKey()[1]
     m = int(input("input M: "))
+    if m >= n:
+        raise ValueError("Error: m must less than n")
     c = rsa.encrypt(m)
     print("encrypted data: " + str(c))
     m = rsa.decrypt(c)
