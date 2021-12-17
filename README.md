@@ -58,10 +58,6 @@ DNA计算机是一种生物形式的计算机。它是利用DNA(脱氧核糖核�
 >
 > [区块链](https://baike.baidu.com/item/%E5%8C%BA%E5%9D%97%E9%93%BE/13465666)
 
-
-
-
-
 ### 第三次作业
 #### 异或加密
 
@@ -140,8 +136,6 @@ def decrypt(encrypt_data, key_words):
 ![加密](https://cdn.jsdelivr.net/gh/Country-If/Typora-images/img/20210930172953.png)
 ###### 解密
 ![解密](https://cdn.jsdelivr.net/gh/Country-If/Typora-images/img/20210930173003.png)
-
-
 
 #### 哈希
 ##### 要求
@@ -227,10 +221,11 @@ def Hash_sha1(file_path, Bytes=1024):
 ![清空文件列表](https://cdn.jsdelivr.net/gh/Country-If/Typora-images/img/20210930180600.png)
 ###### 计算Hash值
 - 程序运行截图
+  
     ![Hash](https://cdn.jsdelivr.net/gh/Country-If/Typora-images/img/20210930180556.png)
 - 输出文件截图
+  
     ![输出文件](https://cdn.jsdelivr.net/gh/Country-If/Typora-images/img/20210930180603.png)
-
 
 ### 第四次作业
 #### 要求
@@ -708,6 +703,7 @@ def main():
 ![](第六次作业/images/自相关函数概念1.png)
 
 ![](第六次作业/images/自相关函数概念2.png)
+
 2. 算法
 
     根据输入的位移值循环左移二进制位串，逐位进行比较统计得到相同的位数和不相同的位数
