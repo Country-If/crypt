@@ -1,19 +1,5 @@
 # 密码学作业汇总
 
-> 姓名：徐国涛<br>
-> 学号：3119005436
-
-## 链接列表
-- 第二次作业：[网上搜集资料](https://10.21.49.169/3119005436/crypt/blob/master/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
-  
-- 第三次作业：[异或加密](https://10.21.49.169/3119005436/crypt/blob/master/%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E%E4%B9%A6.md) , [哈希](https://10.21.49.169/3119005436/crypt/blob/master/%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E%E4%B9%A6.md)
-  
-- 第四次作业：[DES](https://10.21.49.169/3119005436/crypt/blob/master/%E7%AC%AC%E5%9B%9B%E6%AC%A1%E4%BD%9C%E4%B8%9A(DES)/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.md)
-  
-- 第五次作业：[RSA](https://10.21.49.169/3119005436/crypt/blob/master/%E7%AC%AC%E4%BA%94%E6%AC%A1%E4%BD%9C%E4%B8%9A(RSA)/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.md)
-  
-- 第六次作业：[游程统计、自相关系数、RC4](https://10.21.49.169/3119005436/crypt/blob/master/%E7%AC%AC%E5%85%AD%E6%AC%A1%E4%BD%9C%E4%B8%9A/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.md)
-  
 ## 完整内容
 
 ### 第二次作业
@@ -695,14 +681,14 @@ def main():
 
 4. 运行结果截图
 
-    ![](第六次作业/images/统计游程.png)
+    ![](序列密码相关/images/统计游程.png)
    
 ##### 对输入的二进制位串和位移计算自相关系数
 1. 介绍
 
-![](第六次作业/images/自相关函数概念1.png)
+![](序列密码相关/images/自相关函数概念1.png)
 
-![](第六次作业/images/自相关函数概念2.png)
+![](序列密码相关/images/自相关函数概念2.png)
 
 2. 算法
 
@@ -735,27 +721,27 @@ def main():
 ```
 4. 运行结果截图
 
-![](第六次作业/images/自相关系数1.png)
+![](序列密码相关/images/自相关系数1.png)
    
-![](第六次作业/images/自相关系数2.png)
+![](序列密码相关/images/自相关系数2.png)
 
 ##### RC4密码
 1. 介绍
 - 基本原理
 
-    ![](第六次作业/images/rc4概念1.png)
+    ![](序列密码相关/images/rc4概念1.png)
 - 加密过程
 
-    ![](第六次作业/images/rc4概念2.png)
+    ![](序列密码相关/images/rc4概念2.png)
 - RC4算法的加解密
 RC4加密时，将密钥字节k与明文字节模2相加便完成了加密。解密时，将密钥字节k与密文字节模2相加便完成了解密。
 2. 算法
 - 初始化S表
 
-    ![](第六次作业/images/伪代码1.png)
+    ![](序列密码相关/images/伪代码1.png)
 - 密钥流的生成
 
-    ![](第六次作业/images/伪代码1.png)
+    ![](序列密码相关/images/伪代码1.png)
 - 加解密算法
 
     遍历所有字节，将每位字节转为二进制位串后逐位进行异或运算
@@ -840,4 +826,4 @@ def Byte_OR(Byte_A, Byte_B):
 ```
 4. 运行结果截图
 
-    ![](第六次作业/images/rc4.png)
+    ![](序列密码相关/images/rc4.png)
