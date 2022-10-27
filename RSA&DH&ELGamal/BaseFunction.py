@@ -25,7 +25,12 @@ def is_prime(n):
 
 
 def is_prime_probability_test(n):
-    """素数的概率性检验算法"""
+    """
+    素数的概率性检验算法
+
+    :param n: int
+    :return: bool：是素数返回True，否则返回False
+    """
     pass  # 占坑，有时间补，教材P221
 
 
@@ -61,27 +66,27 @@ def gcd_recursion(a, b):
         return gcd_recursion(b, a % b)
 
 
-def InvMod(a, b):
+def ExGcd(e, n):
     """
-    递归实现扩展欧几里得算法: ed = 1 (mod n)
+    递归实现扩展欧几里得算法: ed ≡ 1 (mod n) <=> ed + ny = 1
 
-    :param a: e(int)
-    :param b: n(int)
-    :return: gcd, x, y (x即是e^-1，也就是d)(int, int, int)
+    :param e: int
+    :param n: int
+    :return: gcd, d, y (int, int, int)
     """
-    if b == 0:
-        return a, 1, 0
+    if n == 0:
+        return e, 1, 0
     else:
-        gcd, x, y = InvMod(b, a % b)
-        t = x
-        x = y
-        y = t - a // b * y
-        return gcd, x, y
+        gcd, d, y = ExGcd(n, e % n)
+        t = d
+        d = y
+        y = t - e // n * y
+        return gcd, d, y
 
 
 def ExpMod(a, b, n):
     """
-    模指运算: a^b (mod n)
+    模指运算(快速平方乘算法): a^b (mod n)
 
     :param a: int
     :param b: int
@@ -89,7 +94,7 @@ def ExpMod(a, b, n):
     :return: int
     """
     b = bin(b)[2:]  # 获取二进制，去掉开头的'0b'
-    # 快速平方乘算法得到列表
+    # 平方乘后的存放列表
     L = [a]
     for i in range(len(b) - 1):
         a = a * a
@@ -132,10 +137,7 @@ def prime_check(num):
     # from primePy import primes
     # primes.check()
 
-    if _factor(num) == num:
-        return True
-    else:
-        return False
+    return _factor(num) == num
 
 
 def generate_p_q(n_bit):

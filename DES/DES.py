@@ -369,6 +369,7 @@ if __name__ == '__main__':
     encrypt_result = encrypt(input_data, input_key)
     print("encrypt result: ")
     print(encrypt_result)
+    print("".join([bit2string(block) for block in encrypt_result]))
     decrypt_result = decrypt(encrypt_result, input_key)
     print("decrypt result: ")
     print(decrypt_result)

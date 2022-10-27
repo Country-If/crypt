@@ -52,7 +52,7 @@ class EIGamal:
         C1 = C[0]
         C2 = C[1]
         V = ExpMod(C1, private_key, self.p)
-        V_inverse = InvMod(V, self.p)[1]
+        V_inverse = ExGcd(V, self.p)[1]
         M = (C2 * V_inverse) % self.p
         return M
 

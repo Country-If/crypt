@@ -27,7 +27,7 @@ class RSA:
         self.__phi_n = (self.__p - 1) * (self.__q - 1)
         # 随机选取e，满足1<e<phi_n，且(e, phi_n)=1
         self.e = _get_prime(random.randint(2, int(str(self.__phi_n)[: len(str(self.__phi_n)) // 2])))
-        self.__d = InvMod(self.e, self.__phi_n)[1] % self.__phi_n
+        self.__d = ExGcd(self.e, self.__phi_n)[1] % self.__phi_n
 
     def PublicKey(self):
         """

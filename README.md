@@ -84,7 +84,7 @@ def encrypt(orig_data, key_words):
         result.append(chr(ord(key[i]) ^ ord(orig_data[i])))  # 异或逐位加密
     return ''.join(result)  # 以str类型返回结果
 ```
-  
+
 2. 解密
 ```python
 def decrypt(encrypt_data, key_words):
@@ -682,7 +682,7 @@ def main():
 4. 运行结果截图
 
     ![](序列密码相关/images/统计游程.png)
-   
+
 ##### 对输入的二进制位串和位移计算自相关系数
 1. 介绍
 
@@ -722,7 +722,7 @@ def main():
 4. 运行结果截图
 
 ![](序列密码相关/images/自相关系数1.png)
-   
+
 ![](序列密码相关/images/自相关系数2.png)
 
 ##### RC4密码
