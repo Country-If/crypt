@@ -84,29 +84,59 @@ def ExGcd(e, n):
         return gcd, d, y
 
 
-def ExpMod(a, b, n):
+def ExpMod(a, b, n, debug=False, debug_all=False):
     """
     模指运算(快速平方乘算法): a^b (mod n)
 
     :param a: int
     :param b: int
     :param n: int
+    :param debug: bool (default False)
+    :param debug_all: bool (default False)
     :return: int
     """
-    b = bin(b)[2:]  # 获取二进制，去掉开头的'0b'
+    a_ = a
+    b_bin = bin(b)[2:]  # 获取二进制，去掉开头的'0b'
     # 平方乘后的存放列表
-    L = [a]
-    for i in range(len(b) - 1):
-        a = a * a
-        L.append(a)
+    L = [a_]
+    for i in range(len(b_bin) - 1):
+        a_ = a_ * a_ % n  # 边乘边模
+        L.append(a_)
     L.reverse()  # 列表反转，与二进制位对应
     # 对二进制值中为1的项相乘并模n
     res = 1
-    for i in range(len(b)):
-        if b[i] == '1':
+    for i in range(len(b_bin)):
+        if b_bin[i] == '1':
             # 边乘边模
             res *= L[i]
             res %= n
+    if debug:
+        print("Calculate: " + str(a) + "^" + str(b) + " mod " + str(n) + " = " + str(res))
+    if debug_all:
+        print("\n*********Debug mode***************")
+        print("Calculate: " + str(a) + "^" + str(b) + " mod " + str(n))
+        weight_list_calc = [2 ** i if b_bin[::-1][i] == '1' else 0 for i in range(len(b_bin) - 1, -1, -1)]
+        weight_list_show = [2 ** i for i in range(len(b_bin) - 1, -1, -1)]
+        print("b: " + str(b) + "(10) = " + b_bin + "(2) = " + "+".join([str(i) for i in weight_list_calc]))
+        for i in range(len(L) - 1, -1, -1):
+            if i == len(L) - 1:
+                print(str(a) + "^" + str(weight_list_show[i]) + " mod " + str(n) + " = " + str(L[i]))
+            else:
+                print(str(a) + "^" + str(weight_list_show[i]) + " mod " + str(n) + " = " +
+                      str(L[i + 1]) + "^2 mod " + str(n) + " = " + str(L[i]))
+        print(str(a) + "^" + str(b) + " mod " + str(n) + " = ", end="")
+        for i in range(len(L) - 1, -1, -1):
+            if weight_list_calc[i] != 0 and i != 0:
+                print(str(a) + "^" + str(weight_list_calc[i]), end=" x ")
+            if weight_list_calc[i] != 0 and i == 0:
+                print(str(a) + "^" + str(weight_list_calc[i]), end=" mod " + str(n) + " = ")
+        for i in range(len(L) - 1, -1, -1):
+            if weight_list_calc[i] != 0 and i != 0:
+                print(str(L[i]), end=" x ")
+            if weight_list_calc[i] != 0 and i == 0:
+                print(str(L[i]), end=" mod " + str(n) + " = ")
+        print(str(res))
+        print("**********************************\n")
     return res
 
 
