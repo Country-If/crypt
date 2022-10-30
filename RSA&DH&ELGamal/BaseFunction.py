@@ -221,6 +221,7 @@ def generate_prime(n_digit):
 def generate_p_g(n_digit):
     """
     生成大素数p及其本原元g
+    rf. https://blog.csdn.net/qq_37685156/article/details/88190088
 
     :param n_digit: int，素数位数
     :return: (p, q), (int, int)
