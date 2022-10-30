@@ -60,6 +60,8 @@ class EIGamal:
 if __name__ == '__main__':
     n = int(input("input prime digits num: "))  # 生成大素数p的位数
     eigamal = EIGamal(n)
+    print("P: " + str(eigamal.p))
+    print("G: " + str(eigamal.g))
     a_private, a_public, b_private, b_public = eigamal.generate_key()  # 获取双方公钥和私钥
     print("A private key: " + str(a_private))
     print("A public key: " + str(a_public))
