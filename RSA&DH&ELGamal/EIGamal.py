@@ -63,9 +63,9 @@ if __name__ == '__main__':
     print("P: " + str(eigamal.p))
     print("G: " + str(eigamal.g))
     a_private, a_public, b_private, b_public = eigamal.generate_key()  # 获取双方公钥和私钥
-    print("A private key: " + str(a_private))
+    print("A secret key: " + str(a_private))
     print("A public key: " + str(a_public))
-    print("B private key: " + str(b_private))
+    print("B secret key: " + str(b_private))
     print("B public key: " + str(b_public))
     m = int(input("input data to be encrypted: "))  # 加密数据
     A_encrypted_data = eigamal.encrypt(a_private, b_public, m)  # A加密，用A的私钥和B的公钥
