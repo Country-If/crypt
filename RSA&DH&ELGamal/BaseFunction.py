@@ -179,7 +179,7 @@ def generate_p_q(n_bit):
     """
     # 随机生成n位二进制所对应的十进制整数
     if n_bit <= min_size:
-        raise ValueError("n太小了，n必须大于" + str(min_size) + "，n值建议小于50")
+        raise ValueError("n太小了，n必须大于%d，n值建议小于50" % min_size)
     randint_list = ['1'] * n_bit  # 初始化长度为n的列表
     # 随机更改数据的位置
     pos_list = random.sample(range(1, n_bit), random.randint(min_size, n_bit) - 1)
