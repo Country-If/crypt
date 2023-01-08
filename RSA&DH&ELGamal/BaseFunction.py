@@ -157,17 +157,34 @@ def _factor(num):
             return num
 
 
+# def prime_check(num):
+#     """
+#     判断是否是素数，参考Python第三方库primePy
+#
+#     :param num: int
+#     :return: bool: 是素数返回True，否则返回False
+#     """
+#     # from primePy import primes
+#     # primes.check()
+#
+#     return _factor(num) == num
+
+
 def prime_check(num):
     """
-    判断是否是素数，参考Python第三方库primePy
+    判断是否是素数
 
     :param num: int
     :return: bool: 是素数返回True，否则返回False
     """
-    # from primePy import primes
-    # primes.check()
-
-    return _factor(num) == num
+    if num == 2 or num == 3:
+        return True
+    if num % 6 != 1 and num % 6 != 5:
+        return False
+    for i in range(5, int(math.sqrt(num)) + 1, 6):
+        if num % i == 0 or num % (i + 2) == 0:
+            return False
+    return True
 
 
 def generate_p_q(n_bit):
