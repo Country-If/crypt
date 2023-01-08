@@ -67,7 +67,7 @@ class Receiver:
         :param a: int, 随机数最小值
         :param b: int, 随机数最大值
         """
-        self.k = random.randint(a, b)
+        self.k = random.randint(a, b) % self.n
         if self.debug:
             print(self.name + " generate k: " + str(self.k))
 
