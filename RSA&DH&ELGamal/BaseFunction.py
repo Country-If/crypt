@@ -24,14 +24,36 @@ def is_prime(n):
     return True
 
 
-def is_prime_probability_test(n):
+def is_prime_probability_test(n, test_time=200):
     """
-    素数的概率性检验算法
+    素数的概率性检验算法: Miller-Rabin
 
     :param n: int
+    :param test_time: int, 测试次数, 建议设为不小于 8, 但也不宜过大, 否则会影响效率
     :return: bool：是素数返回True，否则返回False
     """
-    pass  # 占坑，有时间补，教材P221
+    if n < 3 or n % 2 == 0:
+        return n == 2
+    u, t = n - 1, 0
+    while u % 2 == 0:
+        u = u // 2
+        t = t + 1
+    for _ in range(test_time):
+        a = random.randint(2, n - 1)
+        v = pow(a, u, n)
+        if v == 1:
+            continue
+        s = 0
+        while s < t:
+            if v == n - 1:
+                break
+            v = v * v % n
+            s = s + 1
+        # 如果找到了非平凡平方根，则会由于无法提前 break; 而运行到 s == t
+        # 如果 Fermat 素性测试无法通过，则一直运行到 s == t 前 v 都不会等于 -1
+        if s == t:
+            return False
+    return True
 
 
 def gcd_iteration(a, b):
