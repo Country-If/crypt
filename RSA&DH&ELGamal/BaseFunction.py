@@ -133,6 +133,17 @@ def ExGcd(e, n):
         return gcd, d, y
 
 
+def mod_inverse(a, m):
+    """
+    计算a在模m下的逆元，如果不存在逆元则返回None
+    """
+    d, x, y = ExGcd(a, m)
+    if d == 1:
+        return (x % m + m) % m
+    else:
+        return None
+
+
 def ExpMod(a, b, n, debug=False, debug_all=False):
     """
     模指运算(快速平方乘算法): a^b (mod n)
