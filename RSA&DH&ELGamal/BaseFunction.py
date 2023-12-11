@@ -9,6 +9,33 @@ import random
 min_size = 5  # 二进制位数最小值
 
 
+def prime_factors(n):
+    """
+    返回整数n的唯一分解形式中的所有素数因子
+    """
+    factors = []
+    i = 2
+    while i <= n:
+        if n % i == 0:
+            factors.append(i)
+            n //= i
+        else:
+            i += 1
+    return factors
+
+
+def unique_prime_factors(n):
+    """
+    返回整数n的唯一分解形式，以字典形式表示，
+    字典的键为素数因子，值为该因子在唯一分解形式中出现的次数
+    """
+    factors = prime_factors(n)
+    unique_factors = {}
+    for factor in factors:
+        unique_factors[factor] = unique_factors.get(factor, 0) + 1
+    return unique_factors
+
+
 def is_prime(n):
     """
     试除法判断整数n是否是素数
@@ -278,4 +305,8 @@ def generate_p_g(n_digit):
 
 
 if __name__ == '__main__':
-    pass
+    n = int(input("请输入一个整数: "))
+    print(f"{n}的唯一分解形式为:")
+    factors = unique_prime_factors(n)
+    for factor, count in factors.items():
+        print(f"{factor}^{count}", end=" ")
