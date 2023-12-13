@@ -36,6 +36,16 @@ def unique_prime_factors(n):
     return unique_factors
 
 
+def order(a, m):
+    """
+    计算a模m的阶
+    """
+    for i in range(1, m):
+        if pow(a, i, m) == 1:
+            return i
+    return None
+
+
 def is_prime(n):
     """
     试除法判断整数n是否是素数
